@@ -65,7 +65,9 @@ Status: **Current**
 
 - **Package — Current / next: Implement the responsive Discovery Landing V1.** Build only the
   agreed public discovery experience, use `docs/writing.md` for its EN / Filipino / Polish copy,
-  and connect it to an existing survey tool; do not imply unbuilt product capabilities.
+  and connect it to an existing survey tool; do not imply unbuilt product capabilities. Begin
+  locally. The minimum proposed origin narrative may be included as review material, without a
+  photograph; local review is not publication approval.
 - **Package — Planned: Validate responsive behavior and the complete participation journey.**
   Check phone and larger-screen comprehension, accessibility, actions, language behavior, and
   survey access.
@@ -74,10 +76,14 @@ Status: **Current**
 
 Status: **Planned**
 
-- **Package: Run Pilot 0 — trusted first review.** Observe spontaneous understanding with one
-  trusted Filipino reviewer. This is not an approval gate or community validation.
-- **Package: Apply justified Pilot 0 learning.** Record only anonymized or aggregated observations
-  and refine the prototype or survey where the evidence supports it.
+- **Package: Run Pilot 0 locally with Gladys.** Let her review the actual page, including the
+  proposed origin material, for spontaneous understanding, language, cultural context, trust, and
+  personal presentation. This is not community validation or public approval by default.
+- **Package: Apply one deliberate refinement and confirm publishable personal elements.** Refine
+  the prototype and survey where the review supports it, then explicitly confirm which personal
+  elements may be public.
+- **Package: Publish the approved prototype to GitHub Pages.** Treat GitHub Pages as public and
+  include only personal elements that Gladys has explicitly approved.
 
 ## Stage 3 — Small Filipino pilot
 

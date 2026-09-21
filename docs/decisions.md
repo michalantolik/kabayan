@@ -121,3 +121,20 @@ structures, and first-person project-retrospective persona do not define Pinoy P
 
 Keep detailed guidance in `docs/writing.md`. As reviewed Pinoy Poland public writing accumulates,
 use that body of work as the stronger style reference without copying its sentences mechanically.
+
+## 2026-09-21 — Keep the authentic origin small and subordinate to discovery
+
+The proposed Discovery Landing V1 may briefly explain that the project began from the shared
+everyday experience and curiosity of **Gladys & Michał**, a Filipino-Polish couple living together
+in Poland. Their experience raised questions; it does not represent Filipinos, validate a product
+problem, or establish that the project knows what people need.
+
+Keep the story small, shared, truthful, and privacy-conscious. Do not invent founder roles or turn
+the project into a personal website. The minimum proposed narrative may be used in a local review
+prototype so Gladys can evaluate the actual page; local review does not grant publication
+approval.
+
+Treat GitHub Pages as public unless the chosen deployment is demonstrably access-controlled. Do
+not publish Gladys's personal elements there until she has reviewed the page and explicitly
+confirmed which specific elements may be public. Review a photograph separately if one is later
+considered. Detailed narrative and presentation hypotheses belong in `docs/design.md`.
