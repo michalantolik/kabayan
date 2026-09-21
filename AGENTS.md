@@ -56,9 +56,15 @@ These are research areas, not confirmed needs or product requirements.
 
 ## Current stage
 
-The immediate working artifact is a short, respondent-ready survey. Share it first with a few
-Filipinos, learn from the pilot, improve it, and only then distribute it more broadly. Use aggregate
-patterns and useful follow-up conversations to decide what deserves deeper investigation.
+The survey foundation is respondent-ready but has not been piloted. The Discovery Landing V1
+direction is aligned; the next package is its responsive implementation. The prototype will
+explain the project, invite survey participation, show the discovery process, and explore the
+working name without presenting hypothetical capabilities as real.
+
+After implementation and responsive validation, use Pilot 0 — a trusted first review with one
+Filipino reviewer — to catch obvious problems before sharing with a few Filipinos. Pilot 0 is
+useful feedback, not a validation gate or community representation. See `docs/roadmap.md` for the
+sequence and `docs/discovery.md` for the learning method.
 
 Natural Filipino feedback should challenge assumptions, but no partner or individual is a formal
 review gate or community representative. The survey is a learning mechanism, not proof of demand
@@ -75,6 +81,7 @@ systems, and mobile applications. Technology should follow a validated need.
 - `docs/vision.md` — current vision
 - `docs/discovery.md` — hypotheses and discovery strategy
 - `docs/survey.md` — respondent-ready survey draft and pilot plan
+- `docs/design.md` — durable Discovery Landing V1 design direction
 - `docs/knowledge-and-evidence.md` — decisions, hypotheses, and collected evidence
 - `docs/decisions.md` — durable decisions
 - `docs/roadmap.md` — current sequence of work

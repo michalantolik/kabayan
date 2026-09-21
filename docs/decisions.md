@@ -45,7 +45,56 @@ Natural reactions, corrections, experiences, and ideas from the Filipino project
 anyone else remain valuable discovery input. No individual is a validation gate or represents the
 wider Filipino community.
 
-The first practical mechanism is now a short survey shared initially with a few Filipinos. Improve
-it from the pilot before broader sharing, then use aggregate patterns and useful follow-up
-conversations to decide what deserves deeper investigation. Survey responses are evidence, but the
-survey is not validation by itself and does not automatically create product requirements.
+The first practical research instrument is a short survey. Reach it through Discovery Landing V1,
+use Pilot 0 to catch obvious problems in the page and survey journey, then share it initially with
+a few Filipinos. Improve it from pilot learning before broader sharing, then use aggregate patterns
+and useful follow-up conversations to decide what deserves deeper investigation. Survey responses
+are evidence, but the survey is not validation by itself and does not automatically create product
+requirements.
+
+## 2026-09-21 — Use Discovery Landing V1 as a discovery mechanism
+
+Before broader survey sharing, create a small, real, responsive landing prototype that explains
+the project, establishes enough trust to invite participation, links to the survey, makes the
+discovery process visible, and explores the working name.
+
+The prototype is not the first validated product capability. Public UI must reflect actual
+evidence-backed maturity and must not present hypothetical problem areas as existing sections,
+services, or promises.
+
+## 2026-09-21 — Explain discovery as a visible repeating loop
+
+Use **Listen -> Learn -> Choose -> Build -> Learn again -> repeat** as the durable public model,
+with Listening as the current position. Public wording may improve, especially after
+Filipino-language review, but should remain concrete and describe actual behavior rather than
+marketing aspiration.
+
+## 2026-09-21 — Use Pilot 0 before the small Filipino pilot
+
+After prototype implementation and responsive validation, ask one trusted Filipino reviewer to
+explore the page before a detailed explanation where practical. Use this trusted first review to
+catch obvious comprehension, trust, wording, cultural, naming, action, and mobile problems before
+asking several people for their time.
+
+Pilot 0 is not formal approval, a validation gate, or representation of the Filipino community.
+Record later learning only in appropriately anonymized or aggregated form.
+
+## 2026-09-21 — Treat naming as discovery
+
+Keep **Pinoy Poland** and all alternative names as candidates until evidence justifies a choice.
+Explore meaning, expectations, cultural fit, ambiguity, negative associations, and alternatives,
+not only votes. A small-sample preference does not validate the name, problem, or product. Natural
+Filipino wording and linguistic claims require review before wider public use.
+
+## 2026-09-21 — Separate future-vision exploration from Discovery Landing V1
+
+Preserve the earlier rich concept as design exploration that helped reveal a possible long-term
+visual character. Its hypothetical product areas are not a specification, promise, roadmap, or
+feature backlog. Discovery Landing V1 instead reflects current reality and asks for participation.
+
+## 2026-09-21 — Make the initial prototype mobile-first and light-first
+
+Design Discovery Landing V1 for phone-based review and sharing, with responsive behavior that
+remains understandable on larger screens. Prefer a warm, human, trustworthy, simple visual
+character and do not add dark mode merely for completeness. Exact visual details remain
+exploratory and should respond to implementation and review.

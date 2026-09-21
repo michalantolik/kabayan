@@ -3,97 +3,118 @@
 ## Current position
 
 ```text
-Repository foundation
-        |
-        v
-Survey draft                <- CURRENT / NEXT WORK
-        |
-        v
-Small pilot
-        |
-        v
-Learn + improve survey
-        |
-        v
-Broader sharing
-        |
-        v
-Responses + conversations
-        |
-        v
-Patterns / evidence
-        |
-        v
-Choose one problem
-        |
-        v
-Smallest useful solution
-        |
-        v
-Real usage
-        |
-        v
-Learn + iterate
+Foundation
+    |
+    v
+Survey foundation
+    |
+    v
+Discovery Landing V1 direction      <- ALIGNED
+    |
+    v
+Responsive prototype implementation <- CURRENT / NEXT PACKAGE
+    |
+    v
+Responsive validation
+    |
+    v
+Pilot 0: trusted first review
+    |
+    v
+Learn + refine
+    |
+    v
+Small Filipino pilot
+    |
+    v
+Broader discovery -> patterns -> choose one problem
+    |
+    v
+Smallest useful solution -> real usage -> learn + iterate
 ```
 
-## Stage 1 — Repository foundation
+The roadmap uses **Stage -> Step -> Package** only where it clarifies work. A stage is a meaningful
+period of learning, a step is an outcome within it, and a package is the smallest bounded unit that
+can be implemented, reviewed, validated, and closed independently. Implementation details below a
+package do not belong here. Later stages stay coarse until evidence justifies more detail.
+
+## Stage 1 — Foundation
 
 Status: **Complete**
 
-The project purpose, discovery guardrails, working vision, evidence model, durable decisions, and
-roadmap are established. They will continue to evolve as evidence appears.
+### Step: Establish discovery foundations
 
-## Stage 2 — Respondent-ready survey
+The purpose, evidence rules, privacy boundaries, vision, evidence model, respondent-ready survey
+foundation, decisions, and initial roadmap exist.
+
+## Stage 2 — Discovery preparation
 
 Status: **Current**
 
-Review the short draft as a real form, choose an existing survey tool, and prepare it for a small
-pilot. Keep it natural, phone-friendly, privacy-conscious, and focused on real experiences rather
-than hypothetical product enthusiasm.
+### Step: Align Discovery Landing V1 direction
 
-## Stage 3 — Small pilot
+Status: **Complete — this documentation checkpoint**
 
-Status: **Next**
+This checkpoint defines the prototype's role, public narrative, design character, naming
+exploration, evidence limits, Pilot 0, and relationship to the survey without implementing it.
 
-Share the survey with a few Filipinos. Learn whether it is clear, trustworthy, short enough,
-non-leading, and capable of producing answers useful for the next discovery decision.
+### Step: Prepare a realistic discovery experience
 
-## Stage 4 — Learn and improve
+Status: **Current**
 
-Status: **Planned**
+- **Package — Current / next: Implement the responsive Discovery Landing V1.** Build only the
+  agreed public discovery experience and connect it to an existing survey tool; do not imply
+  unbuilt product capabilities.
+- **Package — Planned: Validate responsive behavior and the complete participation journey.**
+  Check phone and larger-screen comprehension, accessibility, actions, language behavior, and
+  survey access.
 
-Review initial responses and feedback, then improve wording, categories, options, and branching.
-Do not treat the pilot as validation or a completed discovery round.
-
-## Stage 5 — Broader sharing
-
-Status: **Planned**
-
-Share the improved survey more broadly. People may share it further. Keep respondent data outside
-Git and record only appropriately anonymized or aggregated evidence here.
-
-## Stage 6 — Patterns and conversations
+### Step: Pilot 0 and refine
 
 Status: **Planned**
 
-Analyze aggregate patterns, including repeated problems, existing alternatives, and unresolved
-outcomes. Use follow-up conversations where they can explain what happened and why. Planning
-bounds may guide effort, but no response count is a validation threshold.
+- **Package: Run Pilot 0 — trusted first review.** Observe spontaneous understanding with one
+  trusted Filipino reviewer. This is not an approval gate or community validation.
+- **Package: Apply justified Pilot 0 learning.** Record only anonymized or aggregated observations
+  and refine the prototype or survey where the evidence supports it.
 
-## Stage 7 — Select one problem
+## Stage 3 — Small Filipino pilot
+
+Status: **Planned**
+
+Share the refined experience with a few Filipinos. Observe understanding and participation,
+collect survey evidence and useful naming reactions, and improve before broader sharing. Neither
+positive design feedback nor name preference validates a product need.
+
+## Stage 4 — Broader discovery
+
+Status: **Evidence-gated**
+
+Share more broadly only after the small pilot supports doing so. Use aggregate responses,
+observation, and useful conversations to investigate repeated problems, current alternatives, and
+unresolved outcomes. Keep respondent-level data outside Git.
+
+## Stage 5 — Problem selection
 
 Status: **Blocked by evidence**
 
-Choose a first problem only when the evidence justifies testing it. Employer or service-provider
-discovery may be added if emerging evidence makes it relevant.
+Choose one problem only when repeated evidence justifies deeper investigation and a realistic test.
+Add employer or service-provider discovery only if emerging evidence makes it relevant.
 
-## Stage 8 — Smallest useful solution
+## Stage 6 — First useful solution
 
 Status: **Blocked by evidence**
 
-Test the smallest useful response to the selected problem, then observe real usage and iterate.
-The response may be content, a manual service, a workflow, a partnership, software, or something
-else. Technology and business decisions come after the problem is understood.
+Test the smallest useful response to the selected problem and observe real use. The response may be
+information, a manual service, a workflow, a partnership, software, or something else. Do not
+select architecture, infrastructure, or a business model before the problem and experiment require
+them.
+
+## Stage 7 — Learn and iterate
+
+Status: **Blocked by evidence**
+
+Use real usage and outcomes to improve, change direction, stop, or repeat the discovery loop.
 
 ## Guiding rule
 

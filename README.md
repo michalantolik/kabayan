@@ -1,139 +1,45 @@
 # Pinoy Poland
 
-### A simple idea to make life in Poland easier for Filipinos
+## Why this project exists
+
+The human goal is simple: make living and working in Poland easier for Filipinos.
+
+`Pinoy Poland` is a working project name, not a chosen brand. No first problem or product capability
+has been validated. Work, documents, housing, healthcare, language, community, and other topics are
+areas to investigate, not a feature list.
+
+## Current direction
+
+The project is starting by listening rather than guessing. The survey foundation exists, and the
+direction for a small **Discovery Landing V1** is aligned. The next package is to implement that
+responsive prototype. It will explain the project, invite participation in the survey, make the
+discovery process visible, and explore the working name. It is a discovery tool, not the first
+validated product capability.
 
 ```text
-              LIVING IN POLAND
-                     |
-        Sometimes you just need help.
-                     |
-     +---------------+---------------+
-     |               |               |
-    WORK          DOCUMENTS      DAILY LIFE
-     |               |               |
- finding jobs     PESEL           housing
- changing jobs    residence       banking
- contracts        work permits    healthcare
- employers        Polish letters  taxes
-     |               |               |
-     +---------------+---------------+
-                     |
-              WHERE DO I START?
+LISTEN -> LEARN -> CHOOSE -> BUILD -> LEARN AGAIN -> repeat
+  ^
+CURRENT PUBLIC STAGE
 ```
 
-## The idea
+The prototype must reflect only what exists now and must not advertise hypothetical product areas
+as available services.
 
-Create a simple website for Filipinos in Poland where you can find practical help with real
-everyday problems.
+After implementation and responsive checks, one trusted Filipino reviewer will explore it in
+**Pilot 0: trusted first review**. This is intended to catch obvious comprehension, trust, wording,
+cultural, naming, and mobile-UX problems before a small Filipino pilot. One person's feedback is
+useful, but is not community validation or a formal approval gate.
 
-Not complicated information.
+## Repository map
 
-Just:
+- [Vision](docs/vision.md) — the human goal and intentionally unresolved product direction
+- [Discovery](docs/discovery.md) — how learning works and what different evidence can support
+- [Survey](docs/survey.md) — respondent-ready draft and survey-specific pilot constraints
+- [Design direction](docs/design.md) — durable direction for Discovery Landing V1
+- [Knowledge and evidence](docs/knowledge-and-evidence.md) — what is known and not known
+- [Decisions](docs/decisions.md) — durable choices and rationale
+- [Roadmap](docs/roadmap.md) — current position and evidence-gated sequence
+- [Project instructions](AGENTS.md) — working, privacy, and safety guardrails
 
-```text
-I HAVE A PROBLEM
-       |
-       v
-What should I do?
-       |
-       v
-Where should I go?
-       |
-       v
-What do I need?
-       |
-       v
-Simple explanation
-       |
-       v
-Trusted information / useful help
-```
-
-But instead of guessing what Filipinos need, we start by asking them.
-
-## How we start
-
-```text
-        SHORT SURVEY
-             |
-             v
- Share it with a few Filipinos
-             |
-             v
-     They may share it further
-             |
-             v
-   We collect real answers
-             |
-             v
-       SEE THE RESULTS
-             |
-             v
- What problems appear most often?
-             |
-             v
-        START WITH ONE
-             |
-             v
-     Build something useful
-             |
-             v
-      See if people use it
-             |
-             v
-     Learn -> improve -> repeat
-```
-
-So maybe the first thing people need is help with jobs.
-
-Maybe it's documents.
-
-Maybe housing.
-
-Maybe understanding Polish offices and procedures.
-
-Or maybe it's something we haven't thought about at all.
-
-The survey helps us find out. It is a starting point for learning, not proof by itself.
-
-And later the website could grow naturally:
-
-```text
-                  PINOY POLAND
-                       |
-          +------------+------------+
-          |            |            |
-        HELP          JOBS         LIFE
-          |            |            |
-      Documents      Offers       Housing
-      Procedures     Employers    Banking
-      Offices        Changing     Healthcare
-      Letters        jobs         Everyday help
-          |            |            |
-          +------------+------------+
-                       |
-                   COMMUNITY
-```
-
-These are possible future directions, not a promised feature list or product structure.
-
-What we learn may point somewhere different.
-
-Start small. Ask people. See the real problems. Build what is actually useful.
-
-Something made with Filipinos in Poland, not just for Filipinos in Poland.
-
-## About this repository
-
-Pinoy Poland is a working name. This repository holds the project's discovery notes and keeps the
-work evidence-first. No first product capability has been chosen yet.
-
-For contributors:
-
-- [Vision](docs/vision.md)
-- [Discovery approach](docs/discovery.md)
-- [Survey draft](docs/survey.md)
-- [Knowledge and evidence](docs/knowledge-and-evidence.md)
-- [Decisions](docs/decisions.md)
-- [Roadmap](docs/roadmap.md)
-- [Project instructions](AGENTS.md)
+The repository contains discovery documentation only. It does not yet contain a website,
+prototype, survey backend, or validated solution.

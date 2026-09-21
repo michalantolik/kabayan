@@ -2,8 +2,10 @@
 
 ## Status
 
-This is the project's immediate working artifact: a respondent-ready draft for a small pilot. It
-has not been piloted or broadly shared yet. The pilot should improve it before wider distribution.
+This is a respondent-ready draft for a small pilot. It has not been piloted or broadly shared yet.
+It will be reached through the planned Discovery Landing V1. After the prototype is implemented
+and responsively checked, Pilot 0 will review the page and survey journey before the small Filipino
+pilot. Both reviews may improve the survey before wider distribution.
 
 Use an existing survey tool if it is sufficient. Keep the form short, phone-friendly, friendly,
 and easy to share. Exact answer options and branching may be adjusted in the survey tool after the
@@ -21,8 +23,8 @@ demand or a generator of product requirements.
 
 **Help us understand what could make life in Poland easier for Filipinos.**
 
-We are exploring a simple website with practical help for Filipinos in Poland. Before building
-anything, we want to learn about real experiences and problems.
+We are exploring practical help for Filipinos in Poland. Before choosing a problem or building a
+solution, we want to learn about real experiences.
 
 This short survey should take about 5 minutes. You can skip any optional question. Please do not
 share identity or residence documents, document numbers, or other sensitive personal information.
@@ -109,14 +111,19 @@ We will look at answers together as aggregate patterns, not publish personal sto
 
 ### Closing
 
-Thank you. Your answers will help us decide what deserves deeper investigation before anything is
-built. If you know another Filipino whose experience could help, you may share this survey with
+Thank you. Your answers will help us decide what deserves deeper investigation before choosing a
+solution. If you know another Filipino whose experience could help, you may share this survey with
 them.
 
 ## Pilot plan
 
-Share the draft with a few Filipinos first. Natural feedback from the Filipino project partner or
-anyone else is welcome, but no one person is a formal reviewer or validation gate.
+During Pilot 0, one trusted Filipino reviewer should explore the prototype and survey journey
+before receiving a detailed explanation where practical. This may expose obvious purpose, trust,
+wording, cultural, naming, action, or phone-usability problems. The reviewer is not a formal
+approver, validation gate, or representative of the wider community.
+
+After justified refinements, share the draft with a few Filipinos. Natural feedback from any
+participant is welcome, but no one person is a formal reviewer or validation gate.
 
 Observe or ask:
 
@@ -130,8 +137,8 @@ Observe or ask:
 - Would the answers help decide what deserves deeper investigation?
 - Do people naturally feel comfortable sharing it further?
 
-Revise the survey from pilot evidence before broader sharing. Do not treat the pilot as completed
-until it has actually happened.
+Revise the survey from pilot evidence before broader sharing. Do not treat Pilot 0 or the small
+pilot as completed until each has actually happened.
 
 ## Analysis and privacy
 
