@@ -20,7 +20,29 @@ CURRENT PUBLIC STAGE
 
 The prototype must reflect only what exists now and must not advertise hypothetical product areas as available services. Naming alternatives and voting are no longer part of the prototype: the public name is **Kabayan Poland**. Pilot feedback should instead test what that name makes people expect and whether it creates confusing or unwanted associations.
 
-The next evidence-producing step remains **Pilot 0: trusted first review** with Gladys. The origin story and Filipino copy remain review material, and personal elements involving Gladys still require explicit publication approval. Her review is a first reality check, not representative evidence about Filipinos generally.
+The product/discovery roadmap remains at **Stage 2 — Discovery preparation**. The next
+evidence-producing step remains **Pilot 0: trusted first review** with Gladys. The origin story and
+Filipino copy remain review material, and personal elements involving Gladys still require explicit
+publication approval. Her review is a first reality check, not representative evidence about
+Filipinos generally. No product problem, capability, business model, or application direction has
+been validated.
+
+## Technical foundation
+
+Launchpad Application Foundation is installed and validated. The repository contains
+`Kabayan.Web`, `Kabayan.Api`, `Kabayan.Application`, and `Kabayan.Infrastructure` projects with
+corresponding test projects. This is technical foundation work, not product or discovery
+validation.
+
+`Kabayan.Web` remains the generic Foundation shell and is not the current public product
+experience. The existing static Discovery Landing remains the visual and product reference. The
+GitHub Pages workflow still publishes only that static landing, not `Kabayan.Web`. Localization
+1.0 is not installed.
+
+Foundation capabilities such as authentication, accounts, persistence, and application structure
+must not be treated as validated Kabayan requirements. Preserve the installed Foundation, but do
+not build product features on top of those capabilities until discovery evidence creates a
+concrete need.
 
 ## Market scope
 
@@ -42,6 +64,7 @@ Before broader sharing, confirm the publication boundary in [Design direction](d
 
 ## Repository map
 
+- `src/` and `test/` — installed and validated Launchpad Application Foundation and its tests
 - [Vision](docs/vision.md) — human goal, Poland-first scope, and evidence-gated future markets
 - [Brand and market strategy](docs/brand-and-market-strategy.md) — chosen identity, domain safeguards, future-market boundary, and implementation safety check
 - [Discovery](docs/discovery.md) — how learning works and what evidence can support

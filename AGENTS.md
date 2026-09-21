@@ -55,9 +55,20 @@ These are research areas, not confirmed needs or product requirements.
 
 ## Current stage
 
-The survey foundation is respondent-ready but has not been piloted. A responsive local Discovery
-Landing V1 prototype has completed Michał's visual and product review and the resulting bounded
-responsive and copy refinement. The static prototype is committed and a GitHub Pages workflow exists. Do not infer from that alone that a public deployment has run or that the custom domain is configured. The prototype collects no responses.
+The product/discovery roadmap remains at **Stage 2 — Discovery preparation**. The survey foundation
+is respondent-ready but has not been piloted. A responsive local Discovery Landing V1 prototype
+has completed Michał's visual and product review and the resulting bounded responsive and copy
+refinement. The static prototype is committed and remains the current visual and product
+reference. A GitHub Pages workflow exists and still publishes the static landing, not
+`Kabayan.Web`. Do not infer from the workflow alone that a public deployment has run or that the
+custom domain is configured. The prototype collects no responses.
+
+Launchpad Application Foundation is installed and validated. The repository contains
+`Kabayan.Web`, `Kabayan.Api`, `Kabayan.Application`, and `Kabayan.Infrastructure` with corresponding
+test projects. `Kabayan.Web` remains the generic Foundation shell and is not the current public
+product experience. Localization 1.0 is not installed. Foundation installation is technical
+progress, not evidence that a product problem, capability, business model, or application
+direction has been validated.
 
 The next evidence-producing step is Pilot 0 locally with Gladys. The proposed origin material and
 draft Filipino copy remain review material, not approved public content; Filipino copy has not
@@ -72,9 +83,13 @@ review gate or community representative. The survey is a learning mechanism, not
 or validation by itself.
 
 Prefer survey piloting, conversations, observation, official-source research, documenting evidence,
-and later tests of real use or payment. Avoid premature application architecture, frameworks,
-databases, cloud infrastructure, authentication, marketplaces, recruitment systems, payment
-systems, and mobile applications. Technology should follow a validated need.
+and later tests of real use or payment. The installed Foundation's generic authentication,
+accounts, persistence, and application structure must not become assumed Kabayan product
+requirements. Do not remove Foundation code merely because those capabilities are not yet
+product-validated, and do not build product features on top of them until discovery evidence
+creates a concrete need. Avoid additional premature frameworks, cloud infrastructure,
+marketplaces, recruitment systems, payment systems, mobile applications, and speculative
+abstractions. Technology should follow a validated need.
 
 
 ## Implementation simplicity and future-market safety
