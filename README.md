@@ -36,6 +36,7 @@ useful, but is not community validation or a formal approval gate.
 - [Discovery](docs/discovery.md) — how learning works and what different evidence can support
 - [Survey](docs/survey.md) — respondent-ready draft and survey-specific pilot constraints
 - [Design direction](docs/design.md) — durable direction for Discovery Landing V1
+- [Writing and localization](docs/writing.md) — public voice and multilingual editorial guidance
 - [Knowledge and evidence](docs/knowledge-and-evidence.md) — what is known and not known
 - [Decisions](docs/decisions.md) — durable choices and rationale
 - [Roadmap](docs/roadmap.md) — current position and evidence-gated sequence

@@ -82,6 +82,7 @@ systems, and mobile applications. Technology should follow a validated need.
 - `docs/discovery.md` — hypotheses and discovery strategy
 - `docs/survey.md` — respondent-ready survey draft and pilot plan
 - `docs/design.md` — durable Discovery Landing V1 design direction
+- `docs/writing.md` — public voice and EN / Filipino / Polish editorial guidance
 - `docs/knowledge-and-evidence.md` — decisions, hypotheses, and collected evidence
 - `docs/decisions.md` — durable decisions
 - `docs/roadmap.md` — current sequence of work

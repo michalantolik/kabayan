@@ -98,3 +98,26 @@ Design Discovery Landing V1 for phone-based review and sharing, with responsive 
 remains understandable on larger screens. Prefer a warm, human, trustworthy, simple visual
 character and do not add dark mode merely for completeness. Exact visual details remain
 exploratory and should respond to implementation and review.
+
+## 2026-09-21 — Use one public voice across English, Filipino, and Polish
+
+Provide complete public versions in English, Filipino, and Polish without creating separate
+personas. Preserve equivalent meaning, evidence, confidence, uncertainty, intent, respect, and
+product maturity across all three.
+
+Use English as the canonical meaning source for the current editorial workflow, then create
+natural Filipino and Polish versions. This is a consistency mechanism, not a ranking of language
+importance. Translate meaning and voice rather than sentence structure.
+
+Filipino public copy requires human language review before it is treated as reviewed content. One
+reviewer can improve quality but does not establish a universal Filipino language preference.
+
+## 2026-09-21 — Adapt evidence-based writing without copying an engineering persona
+
+Use calm, clear, natural, specific writing; short focused paragraphs; modest claims; concrete
+examples; and honest uncertainty. These transferable principles are supported by the published
+`antolik` writing, but its engineering vocabulary, professional positioning, technical article
+structures, and first-person project-retrospective persona do not define Pinoy Poland's voice.
+
+Keep detailed guidance in `docs/writing.md`. As reviewed Pinoy Poland public writing accumulates,
+use that body of work as the stronger style reference without copying its sentences mechanically.

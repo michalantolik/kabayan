@@ -56,15 +56,16 @@ Status: **Current**
 Status: **Complete — this documentation checkpoint**
 
 This checkpoint defines the prototype's role, public narrative, design character, naming
-exploration, evidence limits, Pilot 0, and relationship to the survey without implementing it.
+exploration, writing and localization standard, evidence limits, Pilot 0, and relationship to the
+survey without implementing it.
 
 ### Step: Prepare a realistic discovery experience
 
 Status: **Current**
 
 - **Package — Current / next: Implement the responsive Discovery Landing V1.** Build only the
-  agreed public discovery experience and connect it to an existing survey tool; do not imply
-  unbuilt product capabilities.
+  agreed public discovery experience, use `docs/writing.md` for its EN / Filipino / Polish copy,
+  and connect it to an existing survey tool; do not imply unbuilt product capabilities.
 - **Package — Planned: Validate responsive behavior and the complete participation journey.**
   Check phone and larger-screen comprehension, accessibility, actions, language behavior, and
   survey access.
