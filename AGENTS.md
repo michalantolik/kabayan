@@ -5,12 +5,11 @@
 This repository explores a simple practical-help website that may make living and working in Poland
 easier for Filipinos.
 
-`Pinoy Poland` is a working name, not a final branding decision. The project remains in product
-discovery, and its first useful capability is not yet selected.
+**Kabayan** is the project and repository identity. **Kabayan Poland** is the chosen public name for the initial Poland market, with `kabayanpoland.com` as the intended primary public domain once live availability is confirmed and the domain is secured. This naming decision replaces the earlier `Pinoy Poland` working name; it does not validate a product, market need, or business model.
 
-Do not assume that the final product is an employment agency, job board, immigration service,
-housing platform, administrative assistance service, community platform, or any other specific
-business. These are possibilities to investigate, not commitments.
+Poland is the only current discovery market. Germany, Austria, Switzerland, or other markets may be explored later only if evidence supports expansion. Do not implement multi-market functionality merely because expansion is plausible.
+
+Do not assume that the final product is an employment agency, job board, immigration service, housing platform, administrative assistance service, community platform, or any other specific business. These are possibilities to investigate, not commitments.
 
 ## Core principle
 
@@ -58,8 +57,7 @@ These are research areas, not confirmed needs or product requirements.
 
 The survey foundation is respondent-ready but has not been piloted. A responsive local Discovery
 Landing V1 prototype has completed Michał's visual and product review and the resulting bounded
-responsive and copy refinement. It remains local and uncommitted, has not been publicly deployed,
-and collects no responses.
+responsive and copy refinement. The static prototype is committed and a GitHub Pages workflow exists. Do not infer from that alone that a public deployment has run or that the custom domain is configured. The prototype collects no responses.
 
 The next evidence-producing step is Pilot 0 locally with Gladys. The proposed origin material and
 draft Filipino copy remain review material, not approved public content; Filipino copy has not
@@ -78,10 +76,26 @@ and later tests of real use or payment. Avoid premature application architecture
 databases, cloud infrastructure, authentication, marketplaces, recruitment systems, payment
 systems, and mobile applications. Technology should follow a validated need.
 
+
+## Implementation simplicity and future-market safety
+
+Build for Poland now. Keep plausible future expansion visible without implementing future requirements.
+
+Prefer the simplest design that solves the current problem and does not unnecessarily lock the project to Poland. Do not introduce multi-market abstractions, country strategies, multi-tenancy, provider hierarchies, speculative frameworks, or pattern-heavy architecture until a real second case or another concrete present need justifies them.
+
+When implementing a meaningful change, make this small safety check:
+
+1. Is this the simplest good solution for the current Poland requirement?
+2. Does it unnecessarily make a future second market difficult?
+3. Are we adding an abstraction that has no concrete use today?
+
+Prefer **yes / no / no**. Keep brand, market-specific content, and similar values in an obvious place when doing so is naturally simpler than scattering them, but do not build a configuration platform for one value. Generalize after a real second case appears.
+
 ## Source of truth
 
 - `AGENTS.md` — project guardrails
 - `docs/vision.md` — current vision
+- `docs/brand-and-market-strategy.md` — naming, domain, market-expansion, and implementation-extension boundaries
 - `docs/discovery.md` — hypotheses and discovery strategy
 - `docs/survey.md` — respondent-ready survey draft and pilot plan
 - `docs/design.md` — durable Discovery Landing V1 design direction

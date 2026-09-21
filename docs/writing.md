@@ -136,6 +136,12 @@ public writing should become the strongest evidence of the project's real voice.
 Preserve the voice and principles, not earlier sentence patterns. Do not turn successful copy into
 a verbal template.
 
+## Brand wording
+
+Use **Kabayan Poland** consistently for the current public Poland experience. Do not describe it as a working name and do not reintroduce candidate-name voting. The broader repository/project identity may be **Kabayan** in technical and internal contexts.
+
+Do not let the name make the copy sound like a recruitment agency, government service, legal authority, or guaranteed-help service unless future evidence and the actual product justify such a role.
+
 ## Compact copy review
 
 ### Substance

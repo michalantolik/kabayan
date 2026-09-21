@@ -12,7 +12,7 @@ Survey foundation
 Discovery Landing V1 direction      <- ALIGNED
     |
     v
-Responsive prototype implementation <- IMPLEMENTED LOCALLY
+Responsive prototype implementation <- IMPLEMENTED
     |
     v
 Initial responsive validation       <- COMPLETE
@@ -21,7 +21,10 @@ Initial responsive validation       <- COMPLETE
 Michał visual + product review      <- COMPLETE
     |
     v
-Bounded responsive + copy refinement <- COMPLETE LOCALLY
+Bounded responsive + copy refinement <- COMPLETE
+    |
+    v
+Kabayan naming + prototype alignment <- COMPLETE
     |
     v
 Pilot 0: trusted first review       <- CURRENT / NEXT
@@ -61,23 +64,33 @@ Status: **Current**
 
 Status: **Complete — this documentation checkpoint**
 
-This checkpoint defines the prototype's role, public narrative, design character, naming
-exploration, writing and localization standard, evidence limits, Pilot 0, and relationship to the
+This checkpoint defines the prototype's role, public narrative, design character, naming direction, writing and localization standard, evidence limits, Pilot 0, and relationship to the
 survey without implementing it.
 
 ### Step: Prepare a realistic discovery experience
 
-Status: **Complete locally — uncommitted**
+Status: **Complete — committed prototype present in supplied repository snapshot**
 
 - **Package — Complete: Implement the responsive Discovery Landing V1 locally.** The dependency-free
   static prototype contains complete EN / draft Filipino / PL versions, the minimum proposed
   origin narrative without a photograph, the discovery loop, an honest survey handoff, and
-  temporary name exploration. It remains uncommitted, sends and stores no responses, and has not
-  been published.
+  the discovery experience. It sends and stores no responses. The repository also contains a GitHub Pages workflow; its presence does not by itself prove that deployment has run.
 - **Package — Complete: Perform initial responsive and functional validation.** The prototype has
   been rendered at representative phone, tablet, and desktop widths; language switching, internal
-  actions, temporary naming interactions, overflow, and local resources have been checked. This
+  actions, the then-current naming interaction, overflow, and local resources have been checked. This
   technical pass is not audience evidence or product approval.
+
+### Step: Align the chosen Kabayan name before Pilot 0
+
+Status: **Complete**
+
+- **Package — Complete: Replace candidate-name exploration with Kabayan Poland.** Candidate-name voting/preview UI has been removed; public copy and repository documentation use the chosen name while preserving rationale and unresolved risks.
+
+### Step: Secure the intended public identity
+
+Status: **Planned before relying on the public identity; not a gate for local Pilot 0**
+
+- **Package — Planned: Confirm and secure the intended public identity.** Before relying on the domain or handles, confirm live availability and, if appropriate, register `kabayanpoland.com`; check/secure useful social handles. Consider `kabayanpoland.pl` and optionally `kabayan-poland.com` only as defensive redirects if their cost is justified. Formal trademark clearance is required before meaningful commercial brand investment, not as evidence that a product need exists. This work does not block local Pilot 0.
 
 ### Step: Pilot 0 and refine
 
@@ -88,7 +101,7 @@ Status: **Current — Pilot 0 next**
   respondent evidence and did not make the prototype ready for public deployment.
 - **Package — Current / next: Run Pilot 0 locally with Gladys.** Let her review the actual page,
   including the proposed origin material and draft Filipino copy, for spontaneous understanding,
-  language, cultural context, trust, and personal presentation. Filipino public copy has not yet
+  language, cultural context, trust, personal presentation, and spontaneous expectations created by the **Kabayan Poland** name. Do not ask her to choose among candidate names; observe whether the chosen name feels natural or misleading, especially whether it suggests recruitment. Filipino public copy has not yet
   received human review, and no personal element involving Gladys is approved for publication yet.
   This is a first reality check from one person close to the project, not representative evidence
   about Filipinos or public approval by default.
@@ -103,8 +116,7 @@ Status: **Current — Pilot 0 next**
 Status: **Planned**
 
 Share the refined experience with a few Filipinos. Observe understanding and participation,
-collect survey evidence and useful naming reactions, and improve before broader sharing. Neither
-positive design feedback nor name preference validates a product need.
+collect survey evidence and useful spontaneous reactions to **Kabayan Poland**, and improve before broader sharing. Do not turn this into a candidate-name vote. Neither positive design feedback nor a positive name reaction validates a product need.
 
 ## Stage 4 — Broader discovery
 
@@ -135,6 +147,10 @@ them.
 Status: **Blocked by evidence**
 
 Use real usage and outcomes to improve, change direction, stop, or repeat the discovery loop.
+
+## Future-market boundary
+
+Poland is the only current market. Germany, Austria, Switzerland, or other countries may be explored only after Poland supplies evidence for a useful and potentially repeatable solution. Keep future extension technically possible where that is naturally simple, but do not create multi-market architecture, content trees, deployments, or abstractions before a real second market exists.
 
 ## Guiding rule
 

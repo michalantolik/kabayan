@@ -7,11 +7,11 @@ how to learn are not market evidence.
 
 ## What we have decided
 
-- `Pinoy Poland` remains a working name.
+- **Kabayan** is the project/repository identity; **Kabayan Poland** is the chosen public name for the initial Poland market; `kabayanpoland.com` is the intended primary domain subject to live availability confirmation and registration.
 - The human goal is to make living and working in Poland easier for Filipinos.
 - No first product problem or capability has been selected.
 - Discovery Landing V1 will make discovery tangible, explain the project, invite survey
-  participation, show the discovery loop, and explore naming before broader sharing.
+  participation and show the discovery loop before broader sharing. It no longer contains candidate-name voting.
 - Public UI should represent the project's actual maturity and must not present hypothetical
   product capabilities as if they exist.
 - Pilot 0 will precede the small Filipino pilot, without making one person a validation gate or
@@ -32,8 +32,7 @@ transportation, language, contracts, family matters, trustworthy information, co
 everyday life, or problems discovery has not yet revealed.
 
 None of these areas is a confirmed need, priority, feature, navigation section, or product
-requirement. The final brand, Filipino public copy, product form, business model, and technology
-also remain unresolved.
+requirement. Filipino public copy, product form, business model, and technology remain unresolved. Future country expansion is also unresolved and evidence-gated.
 
 ## Evidence we do not yet have
 
@@ -47,10 +46,9 @@ does not yet have:
 - a validated business model;
 - evidence of employer demand;
 - Pilot 0 evidence or small-pilot evidence; or
-- naming validation.
+- evidence about how additional Filipino participants spontaneously understand **Kabayan Poland**, including whether it creates an unintended recruitment/employment-agency expectation.
 
-A prototype will not itself supply this evidence. Positive reactions to its visuals, wording, or a
-candidate name would not validate an underlying problem or solution.
+A prototype will not itself supply this evidence. Positive reactions to its visuals, wording, or the Kabayan Poland name would not validate an underlying problem or solution.
 
 ## Evidence entries
 
@@ -71,3 +69,21 @@ Next question:
 
 Keep personally identifying respondent information, contact details, private messages, sensitive
 stories, documents, and raw recordings outside this repository.
+
+
+## 2026-09-21 — Naming and domain research before adoption
+
+Source:
+Project discussion plus public web, company-name, trademark, and social-handle research performed before adopting the name.
+
+Observation:
+`Kabayan` is a culturally natural Filipino term and is widely used by unrelated organizations and businesses. Uses connected with Filipino recruitment/employment also exist, including in Poland. No obvious established exact-match `Kabayan Poland` web brand or indexed `@kabayanpoland` presence was found in the research performed. Existing commercial uses of `Kabayan` mean the generic word should not be treated as uniquely owned by this project. Live domain availability, handle availability, and formal trademark clearance were not established by ordinary web search.
+
+What this supports:
+Using **Kabayan Poland** as a practical, reversible public naming decision for the Poland discovery market, while testing spontaneous audience expectations rather than running a name vote.
+
+What this does not prove:
+That `kabayanpoland.com` is currently registrable; that social handles are available; that the name is legally clear in relevant trademark classes/jurisdictions; that Filipinos broadly prefer the name; or that the project has market demand.
+
+Next question:
+After securing the domain if available, what do Pilot 0 and a few independent Filipino participants expect **Kabayan Poland** to be before the project explains itself, and does recruitment emerge as a misleading first association?

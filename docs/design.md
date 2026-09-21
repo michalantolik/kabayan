@@ -4,7 +4,7 @@
 
 Discovery Landing V1 is a small, real, responsive prototype used to support discovery before
 broader survey sharing. It should explain the project simply, establish enough trust to invite
-participation, connect to the short survey, show how discovery works, and explore the working name.
+participation, connect to the short survey, show how discovery works, and present the chosen **Kabayan Poland** name without pretending that the product itself is validated.
 
 It is not the first validated product capability. Public UI must reflect the project's actual
 maturity: do not present jobs, documents, housing, healthcare, community, or any other hypothetical
@@ -14,7 +14,7 @@ area as an existing product section or promised capability.
 
 The current conceptual flow is:
 
-1. Introduce the working name, the human goal, English / Filipino / Polish choice, and the fact
+1. Introduce **Kabayan Poland**, the human goal, English / Filipino / Polish choice, and the fact
    that the project is starting by listening; offer a clear survey action.
 2. Explain that we want to understand real experiences, difficulties, what already works, and what
    could genuinely help rather than guess.
@@ -22,8 +22,7 @@ The current conceptual flow is:
    documents and unnecessary personal information are not wanted.
 4. Show the vertical discovery loop — Listening, Learning, Choosing, Building, Learning again —
    with Listening visibly current.
-5. Invite thoughtful reactions to the working name and candidate names, including what each name
-   implies, strange or missed associations, and alternative suggestions.
+5. Present **Kabayan Poland** as the chosen Poland-market name. During research, ask what it made people expect before explanation and whether it carries confusing or unwanted associations, especially recruitment.
 6. End with a participation invitation that connects experience to what deserves investigation.
 
 This is direction, not frozen information architecture or final copy.
@@ -78,19 +77,11 @@ be edited for brevity and privacy, but not into something materially different f
 
 ## Naming and language
 
-`Pinoy Poland` and the candidate ideas **Gabay**, **Kasama**, **Kaagapay**, **Buhay**, and **Tulong**
-are hypotheses, not approved names. Naming discovery should ask what a name suggests, whether it
-feels appropriate or strange, which cultural meanings may be missed, and what alternatives people
-suggest. A small-sample vote or ranking is input, not validation.
+**Kabayan** is the project/repository identity. **Kabayan Poland** is the chosen public name for the Poland discovery market, with `kabayanpoland.com` as the intended primary domain once availability is confirmed and it is secured. The previous `Pinoy Poland` working name and the Gabay/Kasama/Kaagapay/Buhay/Tulong candidate interaction are historical discovery material, not current public UI.
 
-The prototype should ultimately provide complete English, Filipino, and Polish public versions.
-English is the current canonical meaning source; Filipino and Polish should be natural versions of
-the same project, not literal translations or separate personas. The working brand should not
-change merely because the interface language changes. Detailed editorial and review rules belong
-in [Public Writing and Localization](writing.md).
+Do not ask a small group to vote for a brand. Let participants encounter **Kabayan Poland** in the real page and ask, before explanation where practical, what they expected the site to be. Record useful associations, especially any assumption that it is a recruitment/employment agency.
 
-An eventual in-page name preview may make reactions more concrete, but its exact interaction is
-exploratory.
+`Kabayan` is widely used outside this project, so do not imply exclusive ownership of the generic term. Formal trademark clearance remains a separate pre-commercial task.
 
 A user-facing language order such as `FIL · EN · PL` is a UI hypothesis, not a settled label or
 order. Refine it during implementation and Pilot 0 without confusing it with editorial source

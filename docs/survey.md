@@ -119,7 +119,7 @@ them.
 
 During Pilot 0, one trusted Filipino reviewer should explore the prototype and survey journey
 before receiving a detailed explanation where practical. This may expose obvious purpose, trust,
-wording, cultural, naming, action, or phone-usability problems. The reviewer is not a formal
+wording, cultural, Kabayan Poland expectation/association, action, or phone-usability problems. The reviewer is not a formal
 approver, validation gate, or representative of the wider community.
 
 After justified refinements, share the draft with a few Filipinos. Natural feedback from any

@@ -72,7 +72,7 @@ Follow-up conversations can explain why a pattern exists and what happened in re
 - Assumptions and planning decisions are not market evidence.
 - Survey responses are evidence, but not automatic product requirements.
 - One person's experience is useful context, not validation for a community.
-- Naming preference is not validation of a problem, solution, or market.
+- **Kabayan Poland** is the chosen Poland-market name; do not run candidate-name voting. Ask what participants expected from the name before explanation, whether it feels natural, and whether it creates misleading associations. A positive name reaction is not validation of a problem, solution, or market.
 - Existing alternatives, actual behavior, unresolved outcomes, and real usage matter.
 - Hypothetical willingness to use or pay is not proof of demand.
 - Natural comments and corrections from any Filipino participant may inform discovery, but no

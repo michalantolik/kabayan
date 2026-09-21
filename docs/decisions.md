@@ -7,10 +7,9 @@ implement a product yet.
 
 The problem space is broad and the most valuable problem has not been validated.
 
-## 2026-09-21 — Treat Pinoy Poland as a working name
+## 2026-09-21 — Use Pinoy Poland as the initial working name (superseded)
 
-Use **Pinoy Poland** as the current repository and project name without treating it as the final
-brand.
+The repository began as **Pinoy Poland** while naming remained open. This decision is superseded by the later Kabayan naming decision below; keep it only as project history.
 
 ## 2026-09-21 — Use English as the initial project language
 
@@ -55,8 +54,7 @@ requirements.
 ## 2026-09-21 — Use Discovery Landing V1 as a discovery mechanism
 
 Before broader survey sharing, create a small, real, responsive landing prototype that explains
-the project, establishes enough trust to invite participation, links to the survey, makes the
-discovery process visible, and explores the working name.
+the project, establishes enough trust to invite participation, links to the survey and makes the discovery process visible.
 
 The prototype is not the first validated product capability. Public UI must reflect actual
 evidence-backed maturity and must not present hypothetical problem areas as existing sections,
@@ -79,12 +77,9 @@ asking several people for their time.
 Pilot 0 is not formal approval, a validation gate, or representation of the Filipino community.
 Record later learning only in appropriately anonymized or aggregated form.
 
-## 2026-09-21 — Treat naming as discovery
+## 2026-09-21 — Treat naming as discovery (superseded in part)
 
-Keep **Pinoy Poland** and all alternative names as candidates until evidence justifies a choice.
-Explore meaning, expectations, cultural fit, ambiguity, negative associations, and alternatives,
-not only votes. A small-sample preference does not validate the name, problem, or product. Natural
-Filipino wording and linguistic claims require review before wider public use.
+Naming began as discovery rather than a vote. That principle produced the later decision to adopt **Kabayan Poland** instead of continuing a candidate-name voting interaction. The name is now chosen for the initial market, while its meaning, expectations, cultural fit, ambiguity, and negative associations remain valid things to observe during pilots. A positive name reaction does not validate the problem, solution, or market.
 
 ## 2026-09-21 — Separate future-vision exploration from Discovery Landing V1
 
@@ -117,9 +112,9 @@ reviewer can improve quality but does not establish a universal Filipino languag
 Use calm, clear, natural, specific writing; short focused paragraphs; modest claims; concrete
 examples; and honest uncertainty. These transferable principles are supported by the published
 `antolik` writing, but its engineering vocabulary, professional positioning, technical article
-structures, and first-person project-retrospective persona do not define Pinoy Poland's voice.
+structures, and first-person project-retrospective persona do not define Kabayan Poland's voice.
 
-Keep detailed guidance in `docs/writing.md`. As reviewed Pinoy Poland public writing accumulates,
+Keep detailed guidance in `docs/writing.md`. As reviewed Kabayan Poland public writing accumulates,
 use that body of work as the stronger style reference without copying its sentences mechanically.
 
 ## 2026-09-21 — Keep the authentic origin small and subordinate to discovery
@@ -138,3 +133,30 @@ Treat GitHub Pages as public unless the chosen deployment is demonstrably access
 not publish Gladys's personal elements there until she has reviewed the page and explicitly
 confirmed which specific elements may be public. Review a photograph separately if one is later
 considered. Detailed narrative and presentation hypotheses belong in `docs/design.md`.
+
+
+## 2026-09-21 — Adopt Kabayan as the project identity and Kabayan Poland for the initial market
+
+Rename the repository/project identity from **Pinoy Poland** to **Kabayan**. Use **Kabayan Poland** as the public name for the initial Poland market and **`kabayanpoland.com`** as the intended primary domain once live availability is confirmed and it is secured.
+
+The decision is intentionally narrower than claiming ownership of the generic word `Kabayan`. Research found that `Kabayan` is culturally natural for Filipinos and widely used commercially, including uses connected with Filipinos and employment. The exact `Kabayan Poland` combination did not reveal an obvious web collision in the research performed, but legal clearance is not established.
+
+Do not use a small-sample vote to select another name. Pilot participants should encounter **Kabayan Poland** naturally and can be asked what they expected the site to be, whether the name feels natural, and whether it creates confusing or unwanted associations. In particular, watch for an unintended expectation that the project is a recruitment or employment agency.
+
+Before meaningful commercial investment in the brand, perform appropriate trademark clearance for the relevant classes and jurisdictions. Before relying on the domain or social handles, confirm their availability directly and secure them. Defensive domains may be considered, especially `kabayanpoland.pl` and, only if inexpensive/useful, `kabayan-poland.com`; they should redirect to the primary domain rather than host separate sites.
+
+## 2026-09-21 — Keep Poland as the only current market while preserving a simple path to expansion
+
+Poland is the initial and only current discovery market. If Poland eventually produces evidence for a useful, repeatable solution, independently explore other markets such as Germany, Austria, and Switzerland rather than assuming that Polish learning transfers automatically.
+
+The possible long-term naming family is **Kabayan Poland**, **Kabayan Germany**, **Kabayan Austria**, **Kabayan Switzerland**, but these are future options, not launched brands, reserved domains, roadmap commitments, or evidence that expansion will happen.
+
+Keep market and language as separate concepts if a second market eventually exists: a country is not a language, and Filipino/English/local-language versions may coexist within one market.
+
+## 2026-09-21 — Build simply for Poland and generalize only from a real second case
+
+Use a senior-engineering simplicity rule: solve today's real problem, keep tomorrow's plausible extension visible, and do not implement tomorrow's requirements today.
+
+Do not add multi-market frameworks, country strategies, provider abstractions, multi-tenancy, speculative layers, or pattern-heavy architecture merely to appear extensible. Prefer explicit, readable, reversible code. Avoid unnecessarily scattering Poland-specific or brand-specific values when a simple obvious boundary is cheaper, but do not build a configuration system for one value.
+
+Before a meaningful implementation choice, check: is this the simplest good solution for Poland; does it unnecessarily block a future second market; and are we adding an abstraction with no concrete present use? Generalize when a real second market or another current requirement supplies the second case.

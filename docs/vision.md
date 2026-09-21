@@ -4,9 +4,7 @@
 
 Make living and working in Poland easier for Filipinos.
 
-`Pinoy Poland` is a working name. The broad working concept is practical help that could make real
-everyday problems easier for Filipinos in Poland. A website is one possible delivery form, but
-discovery should determine both the first problem and the smallest useful response.
+**Kabayan** is the project identity and **Kabayan Poland** is the chosen public name for the initial Poland market. The intended primary domain is `kabayanpoland.com`, subject to live availability confirmation and registration. The broad concept is practical help that could make real everyday problems easier for Filipinos in Poland. A website is one possible delivery form, but discovery should determine both the first problem and the smallest useful response.
 
 It could help a person move from:
 
@@ -34,13 +32,17 @@ These are examples and hypotheses, not validated needs, navigation, or committed
 The first useful capability remains undecided. The respondent-ready survey foundation and the
 planned Discovery Landing V1 are discovery mechanisms. The landing prototype will make the
 project tangible on a phone, explain why listening comes before building, invite survey
-participation, and explore the working name. It is not the validated product.
+participation, and present **Kabayan Poland** consistently. It is not the validated product.
 
 The project will use the survey, observation, and useful conversations to look for repeated
 concrete problems and how people handle them today. Evidence should determine which one problem is
 worth testing first and whether the smallest useful solution is information, a service, a
 workflow, software, a partnership, or something else.
 
-The final brand, exact Filipino public wording, information architecture, product capabilities,
-business model, technology, and broader product direction remain evidence-gated and deliberately
-unresolved.
+The first product problem, exact Filipino public wording, information architecture, product capabilities, business model, technology, and broader product direction remain evidence-gated and deliberately unresolved. The Poland public name is no longer part of candidate-name voting.
+
+## Future-market option
+
+Poland is the only current market. If evidence later supports a useful and repeatable solution, the concept may be explored independently for Filipinos in other countries, with Germany, Austria, and Switzerland as examples rather than commitments. Do not assume that needs, law, institutions, content, or product-market fit transfer between countries.
+
+Keep a simple path to extension, but do not implement multi-market architecture until a real second market creates a concrete need.

@@ -1,12 +1,12 @@
 const translations = {
   en: {
     meta: {
-      title: "Pinoy Poland — Starting by listening",
-      description: "Pinoy Poland is starting by listening to Filipinos' real experiences of life in Poland."
+      title: "Kabayan Poland — Starting by listening",
+      description: "Kabayan Poland is starting by listening to Filipinos' real experiences of life in Poland."
     },
     skipLink: "Skip to main content",
-    brandLabel: "Pinoy Poland home",
-    workingName: "working name",
+    brandLabel: "Kabayan Poland home",
+    marketLabel: "Poland · discovery",
     languageLabel: "Choose language",
     hero: {
       eyebrow: "For Filipinos connected with Poland",
@@ -53,21 +53,6 @@ const translations = {
       build: { title: "Building", body: "We build the smallest useful response." },
       again: { title: "Learning again", body: "We check whether it helps, then decide what to do next." }
     },
-    names: {
-      eyebrow: "A name we can grow into",
-      title: "Pinoy Poland is a working name.",
-      body: "We are exploring what different names suggest—not asking a small group to choose the brand by vote. Which one feels natural to you, and what does it make you expect?",
-      legend: "Choose a name to explore",
-      suggestLabel: "Another name or a thought we may have missed",
-      placeholder: "Type a suggestion",
-      tryButton: "Preview suggestion",
-      initialFeedback: "Choose a name to preview it. Nothing is sent or stored.",
-      selectedFeedback: "You are previewing “{name}”. This is not a choice or vote, and nothing is sent or stored.",
-      emptyFeedback: "Type a name or thought first.",
-      previewEmptyName: "Choose a name",
-      previewEmptyLabel: "Preview · no name selected",
-      previewActiveLabel: "Currently previewing"
-    },
     final: {
       eyebrow: "One experience can raise a useful question",
       title: "Help us learn what deserves attention.",
@@ -75,18 +60,18 @@ const translations = {
       cta: "How to share your experience"
     },
     footer: {
-      working: "A working name for a project that is starting by listening.",
+      working: "Starting in Poland by listening before building.",
       privacy: "Local review prototype · No analytics · No answers collected"
     }
   },
   fil: {
     meta: {
-      title: "Pinoy Poland — Nagsisimula sa pakikinig",
-      description: "Nagsisimula ang Pinoy Poland sa pakikinig sa tunay na karanasan ng mga Pilipinong may kaugnayan sa Poland."
+      title: "Kabayan Poland — Nagsisimula sa pakikinig",
+      description: "Nagsisimula ang Kabayan Poland sa pakikinig sa tunay na karanasan ng mga Pilipinong may kaugnayan sa Poland."
     },
     skipLink: "Lumaktaw sa pangunahing nilalaman",
-    brandLabel: "Pangunahing pahina ng Pinoy Poland",
-    workingName: "pansamantalang pangalan",
+    brandLabel: "Pangunahing pahina ng Kabayan Poland",
+    marketLabel: "Poland · discovery",
     languageLabel: "Pumili ng wika",
     hero: {
       eyebrow: "Para sa mga Pilipinong may kaugnayan sa Poland",
@@ -133,21 +118,6 @@ const translations = {
       build: { title: "Pagbuo", body: "Bubuo kami ng pinakamaliit na kapaki-pakinabang na tugon." },
       again: { title: "Pag-aaral muli", body: "Titingnan namin kung nakatutulong ito, saka magpapasya kung ano ang susunod." }
     },
-    names: {
-      eyebrow: "Pangalan na maaari nating samahan sa paglago",
-      title: "Pansamantalang pangalan ang Pinoy Poland.",
-      body: "Sinusuri namin kung ano ang ipinahihiwatig ng iba't ibang pangalan—hindi namin hinihiling sa isang maliit na grupo na piliin ang brand sa pamamagitan ng boto. Alin ang natural pakinggan para sa iyo, at ano ang inaasahan mo mula rito?",
-      legend: "Pumili ng pangalang susuriin",
-      suggestLabel: "Ibang pangalan o ideyang maaaring hindi namin napansin",
-      placeholder: "Mag-type ng mungkahi",
-      tryButton: "Tingnan ang mungkahi",
-      initialFeedback: "Pumili ng pangalan para makita ito rito. Walang ipinapadala o sine-save.",
-      selectedFeedback: "Tinitingnan mo ngayon ang “{name}”. Hindi ito pagpili o pagboto, at walang ipinapadala o sine-save.",
-      emptyFeedback: "Mag-type muna ng pangalan o ideya.",
-      previewEmptyName: "Pumili ng pangalan",
-      previewEmptyLabel: "Preview · wala pang napiling pangalan",
-      previewActiveLabel: "Kasalukuyang tinitingnan"
-    },
     final: {
       eyebrow: "Ang isang karanasan ay maaaring magbukas ng mahalagang tanong",
       title: "Tulungan kaming malaman kung ano ang dapat pagtuunan ng pansin.",
@@ -155,18 +125,18 @@ const translations = {
       cta: "Paano ibahagi ang iyong karanasan"
     },
     footer: {
-      working: "Pansamantalang pangalan para sa proyektong nagsisimula sa pakikinig.",
+      working: "Nagsisimula sa Poland sa pakikinig bago bumuo.",
       privacy: "Lokal na review prototype · Walang analytics · Walang sagot na kinokolekta"
     }
   },
   pl: {
     meta: {
-      title: "Pinoy Poland — Zaczynamy od słuchania",
-      description: "Pinoy Poland zaczyna od poznawania prawdziwych doświadczeń Filipińczyków związanych z Polską."
+      title: "Kabayan Poland — Zaczynamy od słuchania",
+      description: "Kabayan Poland zaczyna od poznawania prawdziwych doświadczeń Filipińczyków związanych z Polską."
     },
     skipLink: "Przejdź do głównej treści",
-    brandLabel: "Strona główna Pinoy Poland",
-    workingName: "nazwa robocza",
+    brandLabel: "Strona główna Kabayan Poland",
+    marketLabel: "Polska · discovery",
     languageLabel: "Wybierz język",
     hero: {
       eyebrow: "Dla Filipińczyków związanych z Polską",
@@ -213,21 +183,6 @@ const translations = {
       build: { title: "Budowanie", body: "Tworzymy najmniejsze użyteczne rozwiązanie." },
       again: { title: "Ponowna nauka", body: "Sprawdzamy, czy to pomaga, i decydujemy, co zrobić dalej." }
     },
-    names: {
-      eyebrow: "Nazwa, z którą możemy się rozwijać",
-      title: "Pinoy Poland to nazwa robocza.",
-      body: "Sprawdzamy, co sugerują różne nazwy—nie prosimy małej grupy o wybranie marki w głosowaniu. Która brzmi dla Ciebie naturalnie i czego pozwala się spodziewać?",
-      legend: "Wybierz nazwę do sprawdzenia",
-      suggestLabel: "Inna nazwa albo skojarzenie, którego mogliśmy nie zauważyć",
-      placeholder: "Wpisz propozycję",
-      tryButton: "Zobacz propozycję",
-      initialFeedback: "Wybierz nazwę, aby zobaczyć ją w podglądzie. Nic nie zostanie wysłane ani zapisane.",
-      selectedFeedback: "Oglądasz teraz nazwę „{name}”. To nie jest wybór ani głos, a nic nie zostanie wysłane ani zapisane.",
-      emptyFeedback: "Najpierw wpisz nazwę lub skojarzenie.",
-      previewEmptyName: "Wybierz nazwę",
-      previewEmptyLabel: "Podgląd · żadna nazwa nie jest wybrana",
-      previewActiveLabel: "Aktualnie w podglądzie"
-    },
     final: {
       eyebrow: "Jedno doświadczenie może prowadzić do ważnego pytania",
       title: "Pomóż nam zauważyć, czym warto się zająć.",
@@ -235,44 +190,17 @@ const translations = {
       cta: "Jak podzielić się doświadczeniem"
     },
     footer: {
-      working: "Robocza nazwa projektu, który zaczyna od słuchania.",
+      working: "Zaczynamy w Polsce od słuchania, zanim zaczniemy budować.",
       privacy: "Lokalny prototyp do recenzji · Bez analityki · Bez zbierania odpowiedzi"
     }
   }
 };
 
 const state = {
-  language: "en",
-  selectedName: ""
+  language: "en"
 };
 
 const byPath = (object, path) => path.split(".").reduce((value, key) => value?.[key], object);
-
-function updateFeedback(kind = "initial") {
-  const feedback = document.querySelector("#name-feedback");
-  const copy = translations[state.language].names;
-
-  if (kind === "empty") {
-    feedback.textContent = copy.emptyFeedback;
-    return;
-  }
-
-  if (state.selectedName) {
-    feedback.textContent = copy.selectedFeedback.replace("{name}", state.selectedName);
-    return;
-  }
-
-  feedback.textContent = copy.initialFeedback;
-}
-
-function updatePreview() {
-  const copy = translations[state.language].names;
-  const name = document.querySelector("#preview-name");
-  const label = document.querySelector("#preview-label");
-
-  name.textContent = state.selectedName || copy.previewEmptyName;
-  label.textContent = state.selectedName ? copy.previewActiveLabel : copy.previewEmptyLabel;
-}
 
 function setLanguage(language) {
   const copy = translations[language];
@@ -302,37 +230,8 @@ function setLanguage(language) {
     button.setAttribute("aria-pressed", String(button.dataset.language === language));
   });
 
-  updateFeedback();
-  updatePreview();
-}
-
-function selectName(name) {
-  state.selectedName = name;
-  document.querySelectorAll(".name-option").forEach((button) => {
-    button.setAttribute("aria-pressed", String(button.dataset.name === name));
-  });
-  updatePreview();
-  updateFeedback();
 }
 
 document.querySelectorAll("[data-language]").forEach((button) => {
   button.addEventListener("click", () => setLanguage(button.dataset.language));
-});
-
-document.querySelectorAll(".name-option").forEach((button) => {
-  button.addEventListener("click", () => selectName(button.dataset.name));
-});
-
-document.querySelector("#name-form").addEventListener("submit", (event) => {
-  event.preventDefault();
-  const input = document.querySelector("#name-suggestion");
-  const suggestion = input.value.trim();
-
-  if (!suggestion) {
-    updateFeedback("empty");
-    input.focus();
-    return;
-  }
-
-  selectName(suggestion);
 });
