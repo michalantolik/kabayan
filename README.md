@@ -40,6 +40,16 @@ Open `index.html` directly in a browser. If a local server is preferred, run
 The prototype has no build step, external dependencies, analytics, backend, or persistent storage.
 Its survey action explains the planned participation journey but does not submit a survey.
 
+## Public review deployment
+
+GitHub Pages is configured to use GitHub Actions. The deployment workflow publishes only
+`index.html`, `styles.css`, and `script.js`; repository documentation is not part of the Pages
+artifact. The resulting URL is a public technical review environment, not a product launch or
+survey launch, and it collects no responses.
+
+The current page still contains proposed personal origin material. Do not run the public
+deployment until the publication boundary in [Design direction](docs/design.md) has been satisfied.
+
 ## Repository map
 
 - [Vision](docs/vision.md) — the human goal and intentionally unresolved product direction
