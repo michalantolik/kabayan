@@ -1,0 +1,113 @@
+@page "/account"
+@attribute [Authorize]
+@inject AccountApiClient ApiClient
+@using Kabayan.Web.Common.Composition
+
+<PageTitle>@ProductCapabilities.Text("Account.PageTitle", "Account")</PageTitle>
+
+<section class="account-page">
+    <header class="account-heading">
+        <h1>@ProductCapabilities.Text("Account.Title", "Account")</h1>
+        <p>@ProductCapabilities.Text("Account.Description", "View your account details and manage its lifecycle.")</p>
+    </header>
+
+    @if (_loading)
+    {
+        <p role="status">@ProductCapabilities.Text("Account.Loading", "Loading account...")</p>
+    }
+    else if (_error)
+    {
+        <p role="alert">@ProductCapabilities.Text("Account.LoadError", "The account could not be loaded.")</p>
+    }
+    else if (_accountDeleted)
+    {
+        <section class="account-result"
+                 role="status">
+            <h2>@ProductCapabilities.Text("Account.DeletedTitle", "Account deleted")</h2>
+            <p>@ProductCapabilities.Text("Account.DeletedDescription", "Your account has been permanently deleted.")</p>
+
+            <form method="post"
+                  action="/account/deleted">
+                <AntiforgeryToken />
+
+                <button type="submit">
+                    @ProductCapabilities.Text("Account.Continue", "Continue")
+                </button>
+            </form>
+        </section>
+    }
+    else if (_account is not null)
+    {
+        <section class="account-card"
+                 aria-labelledby="account-details-title">
+            <header>
+                <h2 id="account-details-title">@ProductCapabilities.Text("Account.DetailsTitle", "Account details")</h2>
+                <p>@ProductCapabilities.Text("Account.DetailsDescription", "The email address associated with your account.")</p>
+            </header>
+
+            <dl class="account-details">
+                <div>
+                    <dt>@ProductCapabilities.Text("Account.Email", "Email")</dt>
+                    <dd id="account-email">@_account.Email</dd>
+                </div>
+            </dl>
+        </section>
+
+        <section class="account-danger-zone"
+                 aria-labelledby="delete-account-title">
+            <div>
+                <h2 id="delete-account-title">@ProductCapabilities.Text("Account.DeleteTitle", "Delete account")</h2>
+                <p>
+                    @ProductCapabilities.Text("Account.DeleteDescription", "Permanently delete your account and its associated data. This action cannot be undone.")
+                </p>
+            </div>
+
+            @if (!_confirmingDeletion)
+            {
+                <button class="danger-button"
+                        type="button"
+                        @onclick="OpenDeleteConfirmation">
+                    @ProductCapabilities.Text("Account.DeleteAction", "Delete account")
+                </button>
+            }
+            else
+            {
+                <div class="account-confirmation">
+                    <label>
+                        <input type="checkbox"
+                               @bind="_deleteConfirmed"
+                               disabled="@_deleting" />
+
+                        <span>
+                            @ProductCapabilities.Text("Account.DeleteConfirmation", "I understand that this action permanently deletes my account.")
+                        </span>
+                    </label>
+
+                    @if (_deleteFailed)
+                    {
+                        <p role="alert">
+                            @ProductCapabilities.Text("Account.DeleteError", "The account could not be deleted.")
+                        </p>
+                    }
+
+                    <div class="account-confirmation-actions">
+                        <button type="button"
+                                @onclick="CancelDeleteConfirmation"
+                                disabled="@_deleting">
+                            @ProductCapabilities.Text("Account.Cancel", "Cancel")
+                        </button>
+
+                        <button class="danger-button"
+                                type="button"
+                                @onclick="DeleteAccountAsync"
+                                disabled="@(!_deleteConfirmed || _deleting)">
+                            @(_deleting
+                                ? ProductCapabilities.Text("Account.Deleting", "Deleting...")
+                                : ProductCapabilities.Text("Account.DeletePermanently", "Permanently delete account"))
+                        </button>
+                    </div>
+                </div>
+            }
+        </section>
+    }
+</section>

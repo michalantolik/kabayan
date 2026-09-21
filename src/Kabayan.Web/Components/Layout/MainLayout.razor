@@ -1,0 +1,61 @@
+@inherits LayoutComponentBase
+@using Kabayan.Web.Common.Composition
+
+<AuthorizeView>
+    <Authorized>
+        <div class="app-shell authenticated-shell">
+            <aside class="sidebar">
+                <a class="brand"
+                   href="/"
+                   aria-label="@ProductCapabilities.Text("Shell.HomeLabel", "kabayan home")">
+                    kabayan
+                </a>
+
+                <nav class="sidebar-navigation"
+                     aria-label="@ProductCapabilities.Text("Shell.MainNavigation", "Main navigation")">
+                    <NavLink class="navigation-link"
+                             href="/"
+                             Match="NavLinkMatch.All">
+                        @ProductCapabilities.Text("Shell.Home", "Home")
+                    </NavLink>
+
+                    <NavLink class="navigation-link"
+                             href="/account"
+                             Match="NavLinkMatch.Prefix">
+                        @ProductCapabilities.Text("Shell.Account", "Account")
+                    </NavLink>
+                </nav>
+
+                <form class="sidebar-logout"
+                      method="post"
+                      action="/authentication/logout">
+                    <AntiforgeryToken />
+
+                    <button type="submit">
+                        @ProductCapabilities.Text("Shell.SignOut", "Sign out")
+                    </button>
+                </form>
+            </aside>
+
+            <main class="app-content">
+                @Body
+            </main>
+        </div>
+    </Authorized>
+
+    <NotAuthorized>
+        <div class="app-shell public-shell">
+            <header class="app-header">
+                <a class="brand"
+                   href="/"
+                   aria-label="@ProductCapabilities.Text("Shell.HomeLabel", "kabayan home")">
+                    kabayan
+                </a>
+            </header>
+
+            <main class="app-content">
+                @Body
+            </main>
+        </div>
+    </NotAuthorized>
+</AuthorizeView>

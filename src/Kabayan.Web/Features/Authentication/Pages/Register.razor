@@ -1,0 +1,106 @@
+@page "/register"
+@attribute [AllowAnonymous]
+@using Kabayan.Web.Common.Composition
+
+<PageTitle>@ProductCapabilities.Text("Register.PageTitle", "kabayan — Create account")</PageTitle>
+
+<section class="auth-page">
+    <header class="auth-heading">
+        <h1>@ProductCapabilities.Text("Register.Title", "Create account")</h1>
+
+        <p>
+            @ProductCapabilities.Text("Register.Description", "Create an account to start using kabayan.")
+        </p>
+    </header>
+
+    <div class="auth-card">
+        @if (IsCreated)
+        {
+            <div class="registration-result"
+                 role="status">
+                <h2>@ProductCapabilities.Text("Register.CreatedTitle", "Account created")</h2>
+
+                <p>
+                    @ProductCapabilities.Text("Register.CreatedDescription", "Your account is ready. You can now sign in.")
+                </p>
+
+                <a class="primary-link"
+                   href="/login">
+                    @ProductCapabilities.Text("Register.GoToLogin", "Go to sign in")
+                </a>
+            </div>
+        }
+        else
+        {
+            @if (ErrorMessages.Count > 0)
+            {
+                <div role="alert">
+                    @if (ErrorMessages.Count == 1)
+                    {
+                        <p>@ErrorMessages[0]</p>
+                    }
+                    else
+                    {
+                        <ul>
+                            @foreach (var error in ErrorMessages)
+                            {
+                                <li>@error</li>
+                            }
+                        </ul>
+                    }
+                </div>
+            }
+
+            <form method="post"
+                  action="/authentication/register">
+                <AntiforgeryToken />
+
+                <div class="auth-field">
+                    <label for="register-email">
+                        @ProductCapabilities.Text("Register.Email", "Email")
+                    </label>
+
+                    <input id="register-email"
+                           name="email"
+                           type="email"
+                           autocomplete="username"
+                           required />
+                </div>
+
+                <div class="auth-field">
+                    <label for="register-password">
+                        @ProductCapabilities.Text("Register.Password", "Password")
+                    </label>
+
+                    <input id="register-password"
+                           name="password"
+                           type="password"
+                           autocomplete="new-password"
+                           required />
+                </div>
+
+                <div class="auth-field">
+                    <label for="register-confirm-password">
+                        @ProductCapabilities.Text("Register.ConfirmPassword", "Confirm password")
+                    </label>
+
+                    <input id="register-confirm-password"
+                           name="confirmPassword"
+                           type="password"
+                           autocomplete="new-password"
+                           required />
+                </div>
+
+                <div class="registration-actions">
+                    <a href="/login">
+                        @ProductCapabilities.Text("Register.BackToLogin", "Back to sign in")
+                    </a>
+
+                    <button type="submit">
+                        @ProductCapabilities.Text("Register.Submit", "Create account")
+                    </button>
+                </div>
+            </form>
+        }
+    </div>
+</section>

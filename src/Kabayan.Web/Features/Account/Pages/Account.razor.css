@@ -1,0 +1,144 @@
+﻿.account-page {
+    width: min(100%, 44rem);
+    display: grid;
+    gap: 1.5rem;
+}
+
+.account-heading p,
+.account-card header p,
+.account-danger-zone p,
+.account-result p {
+    margin-bottom: 0;
+    color: var(--color-muted);
+}
+
+.account-card,
+.account-result {
+    padding: clamp(1.25rem, 4vw, 1.75rem);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-large);
+    background: var(--color-surface);
+    box-shadow: var(--shadow-surface);
+}
+
+    .account-card header {
+        padding-bottom: 1.25rem;
+        border-bottom: 1px solid var(--color-border);
+    }
+
+    .account-card h2,
+    .account-danger-zone h2,
+    .account-result h2 {
+        margin-bottom: 0.375rem;
+    }
+
+.account-details {
+    margin: 1.25rem 0 0;
+}
+
+    .account-details div {
+        display: grid;
+        gap: 0.25rem;
+    }
+
+    .account-details dt {
+        color: var(--color-muted);
+        font-size: 0.8125rem;
+        font-weight: 650;
+    }
+
+    .account-details dd {
+        margin: 0;
+        overflow-wrap: anywhere;
+        font-weight: 650;
+    }
+
+.account-danger-zone {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: clamp(1.25rem, 4vw, 1.75rem);
+    border: 1px solid rgba(196, 61, 70, 0.25);
+    border-radius: var(--radius-large);
+    background: var(--color-danger-soft);
+}
+
+    .account-danger-zone > div:first-child {
+        max-width: 27rem;
+    }
+
+.danger-button {
+    flex: 0 0 auto;
+    border-color: var(--color-danger);
+    background: var(--color-danger);
+    color: #ffffff;
+}
+
+    .danger-button:hover:not(:disabled) {
+        border-color: #a9323a;
+        background: #a9323a;
+        color: #ffffff;
+    }
+
+.account-confirmation {
+    width: 100%;
+    display: grid;
+    gap: 1rem;
+    padding-top: 0.25rem;
+}
+
+    .account-confirmation label {
+        display: flex;
+        align-items: flex-start;
+        gap: 0.75rem;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    .account-confirmation input[type="checkbox"] {
+        width: 1.125rem;
+        min-height: 1.125rem;
+        height: 1.125rem;
+        flex: 0 0 1.125rem;
+        margin: 0.125rem 0 0;
+        padding: 0;
+        accent-color: var(--color-danger);
+        box-shadow: none;
+    }
+
+        .account-confirmation input[type="checkbox"]:focus-visible {
+            outline: none;
+            box-shadow: var(--focus-ring);
+        }
+
+    .account-confirmation [role="alert"] {
+        width: 100%;
+        margin: 0;
+    }
+
+.account-confirmation-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.75rem;
+}
+
+.account-result form {
+    margin-top: 1.25rem;
+}
+
+@media (max-width: 40rem) {
+    .account-danger-zone {
+        flex-direction: column;
+    }
+
+        .account-danger-zone > button,
+        .account-confirmation-actions,
+        .account-confirmation-actions button {
+            width: 100%;
+        }
+
+    .account-confirmation-actions {
+        flex-direction: column-reverse;
+    }
+}

@@ -1,0 +1,66 @@
+@page "/login"
+@attribute [AllowAnonymous]
+@using Kabayan.Web.Common.Composition
+
+<PageTitle>@ProductCapabilities.Text("Login.PageTitle", "kabayan — Sign in")</PageTitle>
+
+<section class="auth-page">
+    <header class="auth-heading">
+        <h1>@ProductCapabilities.Text("Login.Title", "Sign in")</h1>
+
+        <p>
+            @ProductCapabilities.Text("Login.Description", "Use your account to continue.")
+        </p>
+    </header>
+
+    <div class="auth-card">
+        @if (!string.IsNullOrWhiteSpace(ErrorMessage))
+        {
+            <div role="alert">
+                @ErrorMessage
+            </div>
+        }
+
+        <form method="post"
+              action="/authentication/login">
+            <AntiforgeryToken />
+
+            <input type="hidden"
+                   name="returnUrl"
+                   value="@GetSafeReturnUrl()" />
+
+            <div class="auth-field">
+                <label for="login-email">
+                    @ProductCapabilities.Text("Login.Email", "Email")
+                </label>
+
+                <input id="login-email"
+                       name="email"
+                       type="email"
+                       autocomplete="username"
+                       required />
+            </div>
+
+            <div class="auth-field">
+                <label for="login-password">
+                    @ProductCapabilities.Text("Login.Password", "Password")
+                </label>
+
+                <input id="login-password"
+                       name="password"
+                       type="password"
+                       autocomplete="current-password"
+                       required />
+            </div>
+
+            <button type="submit">
+                @ProductCapabilities.Text("Login.Submit", "Sign in")
+            </button>
+        </form>
+
+        <div class="auth-prompt">
+            <span>@ProductCapabilities.Text("Login.NoAccount", "Do not have an account?")</span>
+            <a href="/register">@ProductCapabilities.Text("Login.CreateAccount", "Create account")</a>
+        </div>
+    </div>
+</section>

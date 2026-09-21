@@ -1,0 +1,14 @@
+<Solution>
+  <Folder Name="/Source/">
+    <Project Path="src/Kabayan.Api/Kabayan.Api.csproj" />
+    <Project Path="src/Kabayan.Application/Kabayan.Application.csproj" />
+    <Project Path="src/Kabayan.Infrastructure/Kabayan.Infrastructure.csproj" />
+    <Project Path="src/Kabayan.Web/Kabayan.Web.csproj" />
+  </Folder>
+  <Folder Name="/Tests/">
+    <Project Path="test/Kabayan.Api.Tests/Kabayan.Api.Tests.csproj" />
+    <Project Path="test/Kabayan.Application.Tests/Kabayan.Application.Tests.csproj" />
+    <Project Path="test/Kabayan.Infrastructure.Tests/Kabayan.Infrastructure.Tests.csproj" />
+    <Project Path="test/Kabayan.Web.Tests/Kabayan.Web.Tests.csproj" />
+  </Folder>
+</Solution>

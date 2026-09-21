@@ -1,0 +1,20 @@
+@page "/authentication/me"
+@attribute [Authorize]
+@inject AuthenticationApiClient ApiClient
+
+<PageTitle>Current user</PageTitle>
+
+<h1>Current user</h1>
+
+@if (_loading)
+{
+    <p>Loading...</p>
+}
+else if (_error)
+{
+    <p role="alert">The current user could not be loaded.</p>
+}
+else
+{
+    <p id="user-id">@_currentUser?.UserId</p>
+}
