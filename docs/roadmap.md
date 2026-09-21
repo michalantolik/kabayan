@@ -12,13 +12,19 @@ Survey foundation
 Discovery Landing V1 direction      <- ALIGNED
     |
     v
-Responsive prototype implementation <- CURRENT / NEXT PACKAGE
+Responsive prototype implementation <- IMPLEMENTED LOCALLY
     |
     v
-Responsive validation
+Initial responsive validation       <- COMPLETE
     |
     v
-Pilot 0: trusted first review
+Michał visual + product review      <- COMPLETE
+    |
+    v
+Bounded responsive + copy refinement <- COMPLETE LOCALLY
+    |
+    v
+Pilot 0: trusted first review       <- CURRENT / NEXT
     |
     v
 Learn + refine
@@ -61,24 +67,31 @@ survey without implementing it.
 
 ### Step: Prepare a realistic discovery experience
 
-Status: **Current**
+Status: **Complete locally — uncommitted**
 
-- **Package — Current / next: Implement the responsive Discovery Landing V1.** Build only the
-  agreed public discovery experience, use `docs/writing.md` for its EN / Filipino / Polish copy,
-  and connect it to an existing survey tool; do not imply unbuilt product capabilities. Begin
-  locally. The minimum proposed origin narrative may be included as review material, without a
-  photograph; local review is not publication approval.
-- **Package — Planned: Validate responsive behavior and the complete participation journey.**
-  Check phone and larger-screen comprehension, accessibility, actions, language behavior, and
-  survey access.
+- **Package — Complete: Implement the responsive Discovery Landing V1 locally.** The dependency-free
+  static prototype contains complete EN / draft Filipino / PL versions, the minimum proposed
+  origin narrative without a photograph, the discovery loop, an honest survey handoff, and
+  temporary name exploration. It remains uncommitted, sends and stores no responses, and has not
+  been published.
+- **Package — Complete: Perform initial responsive and functional validation.** The prototype has
+  been rendered at representative phone, tablet, and desktop widths; language switching, internal
+  actions, temporary naming interactions, overflow, and local resources have been checked. This
+  technical pass is not audience evidence or product approval.
 
 ### Step: Pilot 0 and refine
 
-Status: **Planned**
+Status: **Current — Pilot 0 next**
 
-- **Package: Run Pilot 0 locally with Gladys.** Let her review the actual page, including the
-  proposed origin material, for spontaneous understanding, language, cultural context, trust, and
-  personal presentation. This is not community validation or public approval by default.
+- **Package — Complete locally: Review and refine the prototype with Michał.** The visual and
+  product review and its bounded responsive and copy refinement are complete. This produced no
+  respondent evidence and did not make the prototype ready for public deployment.
+- **Package — Current / next: Run Pilot 0 locally with Gladys.** Let her review the actual page,
+  including the proposed origin material and draft Filipino copy, for spontaneous understanding,
+  language, cultural context, trust, and personal presentation. Filipino public copy has not yet
+  received human review, and no personal element involving Gladys is approved for publication yet.
+  This is a first reality check from one person close to the project, not representative evidence
+  about Filipinos or public approval by default.
 - **Package: Apply one deliberate refinement and confirm publishable personal elements.** Refine
   the prototype and survey where the review supports it, then explicitly confirm which personal
   elements may be public.

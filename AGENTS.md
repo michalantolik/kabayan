@@ -56,15 +56,18 @@ These are research areas, not confirmed needs or product requirements.
 
 ## Current stage
 
-The survey foundation is respondent-ready but has not been piloted. The Discovery Landing V1
-direction is aligned; the next package is its responsive implementation. The prototype will
-explain the project, invite survey participation, show the discovery process, and explore the
-working name without presenting hypothetical capabilities as real.
+The survey foundation is respondent-ready but has not been piloted. A responsive local Discovery
+Landing V1 prototype has completed Michał's visual and product review and the resulting bounded
+responsive and copy refinement. It remains local and uncommitted, has not been publicly deployed,
+and collects no responses.
 
-After implementation and responsive validation, use Pilot 0 — a trusted first review with one
-Filipino reviewer — to catch obvious problems before sharing with a few Filipinos. Pilot 0 is
-useful feedback, not a validation gate or community representation. See `docs/roadmap.md` for the
-sequence and `docs/discovery.md` for the learning method.
+The next evidence-producing step is Pilot 0 locally with Gladys. The proposed origin material and
+draft Filipino copy remain review material, not approved public content; Filipino copy has not
+received human language review, and Gladys has not yet confirmed publication of her name,
+relationship context, any future photograph, or attributed role. Pilot 0 is a first reality check
+from one person close to the project, not representative evidence about Filipinos or a
+public-deployment gate by itself. See `docs/roadmap.md` for the sequence and `docs/discovery.md` for
+the learning method.
 
 Natural Filipino feedback should challenge assumptions, but no partner or individual is a formal
 review gate or community representative. The survey is a learning mechanism, not proof of demand

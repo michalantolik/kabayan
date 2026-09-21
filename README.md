@@ -10,11 +10,11 @@ areas to investigate, not a feature list.
 
 ## Current direction
 
-The project is starting by listening rather than guessing. The survey foundation exists, and the
-direction for a small **Discovery Landing V1** is aligned. The next package is to implement that
-responsive prototype. It will explain the project, invite participation in the survey, make the
-discovery process visible, and explore the working name. It is a discovery tool, not the first
-validated product capability.
+The project is starting by listening rather than guessing. The survey foundation exists, and a
+responsive **Discovery Landing V1** has completed Michał's local visual and product review and a
+bounded responsive and copy refinement. It explains the project, invites participation in the
+survey, makes the discovery process visible, and explores the working name. It is a discovery
+tool, not the first validated product capability.
 
 ```text
 LISTEN -> LEARN -> CHOOSE -> BUILD -> LEARN AGAIN -> repeat
@@ -25,10 +25,20 @@ CURRENT PUBLIC STAGE
 The prototype must reflect only what exists now and must not advertise hypothetical product areas
 as available services.
 
-After implementation and responsive checks, one trusted Filipino reviewer will explore it in
-**Pilot 0: trusted first review**. This is intended to catch obvious comprehension, trust, wording,
-cultural, naming, and mobile-UX problems before a small Filipino pilot. One person's feedback is
-useful, but is not community validation or a formal approval gate.
+The prototype remains local and uncommitted, has not been publicly deployed, and collects no
+responses. The next evidence-producing step is **Pilot 0: trusted first review** locally with
+Gladys. The origin story and Filipino copy remain draft review material, and Filipino public copy
+has not received human language review. Gladys has not yet confirmed which personal elements may
+be public. Her review will be a first reality check from one person close to the project, not
+representative evidence about Filipinos generally or approval for public deployment by itself.
+
+## Run the local prototype
+
+Open `index.html` directly in a browser. If a local server is preferred, run
+`python -m http.server 8000` from the repository root and open `http://localhost:8000`.
+
+The prototype has no build step, external dependencies, analytics, backend, or persistent storage.
+Its survey action explains the planned participation journey but does not submit a survey.
 
 ## Repository map
 
@@ -42,5 +52,5 @@ useful, but is not community validation or a formal approval gate.
 - [Roadmap](docs/roadmap.md) — current position and evidence-gated sequence
 - [Project instructions](AGENTS.md) — working, privacy, and safety guardrails
 
-The repository contains discovery documentation only. It does not yet contain a website,
-prototype, survey backend, or validated solution.
+The repository contains discovery documentation and a local static prototype. It does not contain
+a deployed website, survey backend, or validated solution.
