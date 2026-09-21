@@ -2,30 +2,45 @@
 
 ## Purpose
 
-This document separates what the project knows from what it currently assumes.
+This document separates project decisions, hypotheses, and collected evidence. Decisions about
+how to learn are not market evidence.
 
-Do not promote assumptions into evidence without a supporting source or real observation.
+## What we have decided
 
-## Current evidence
+- `Pinoy Poland` remains a working name.
+- The current working concept is a practical-help website for Filipinos in Poland.
+- Discovery starts with a short, respondent-ready survey shared first with a few people.
+- The survey will be improved from the pilot before broader sharing.
+- Aggregate results and useful follow-up conversations will be used to investigate repeated
+  problems and how people currently solve them.
+- Evidence should determine the first problem to test.
+- A smallest-useful-solution experiment should come before any large platform.
 
-The project currently has an initial idea and personal observations that justify discovery.
+These are project and process decisions. They do not show that a market need exists.
 
-No broad community need has yet been validated.
-No product-market fit has been established.
-No willingness to pay has been established.
-No specific product direction has been selected.
+## What remains hypothetical
 
-## Current hypotheses
+Potential needs may involve work, finding or changing jobs, documents, residence and work
+procedures, Polish letters and public offices, accommodation, banking, taxes, healthcare,
+transportation, language, contracts, family matters, trustworthy information, community,
+everyday life, or problems discovery has not yet revealed.
 
-Hypotheses include practical information gaps, difficult administrative processes, employment
-and accommodation problems, reliance on informal community help, value in trustworthy information,
-possible demand for paid human assistance, and complementary employer problems.
+None of these areas is a confirmed need, priority, feature, or product requirement.
 
-None of these should be represented as validated market facts yet.
+## Evidence we do not yet have
+
+No survey has been run and no community statistics currently exist. The project does not yet have:
+
+- evidence of broad community need or validated demand;
+- a validated problem ranking or first feature;
+- product-market fit or usage evidence;
+- demonstrated willingness to pay;
+- a validated business model; or
+- evidence of employer demand.
 
 ## Evidence entries
 
-Add dated entries using:
+Add appropriately anonymized or aggregated evidence using:
 
 ```text
 ## YYYY-MM-DD — Short description
@@ -40,4 +55,5 @@ What this does not prove:
 Next question:
 ```
 
-Keep personally identifying respondent information outside the repository.
+Keep personally identifying respondent information, contact details, private messages, sensitive
+stories, documents, and raw recordings outside this repository.

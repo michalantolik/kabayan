@@ -2,87 +2,146 @@
 
 ## Status
 
-This document is a **research outline**, not yet a respondent-ready survey.
+This is the project's immediate working artifact: a respondent-ready draft for a small pilot. It
+has not been piloted or broadly shared yet. The pilot should improve it before wider distribution.
 
-The outline should first be challenged by the Filipino project partner and informed by a small
-number of open conversations. Only then should it become a concrete questionnaire with exact
-wording, answer options, branching, and a pilot.
+Use an existing survey tool if it is sufficient. Keep the form short, phone-friendly, friendly,
+and easy to share. Exact answer options and branching may be adjusted in the survey tool after the
+pilot, with meaningful learning recorded here.
 
 ## Purpose
 
-The eventual survey should help identify repeated problems, understand how people handle them
-today, and recruit participants for deeper conversations. It should be short enough to complete
-easily and should evolve based on what is learned.
+The survey should help us notice repeated problems, understand how people currently handle them,
+and find volunteers for useful follow-up conversations. It is a learning mechanism, not proof of
+demand or a generator of product requirements.
 
-The survey must not force respondents into categories created by the project team.
+## Respondent-ready draft
 
-## Before fixing the questionnaire
+### Introduction
 
-Ask open questions in partner review and early conversations, such as:
+**Help us understand what could make life in Poland easier for Filipinos.**
 
-- What has been unexpectedly difficult about living or working in Poland?
-- Tell us about the last time you needed help with something in Poland.
-- What did you do, and who or what helped you?
-- What still feels confusing, risky, expensive, slow, or difficult?
-- What do you wish you had known earlier?
+We are exploring a simple website with practical help for Filipinos in Poland. Before building
+anything, we want to learn about real experiences and problems.
 
-Use the language and recurring situations from these conversations to refine later answer options.
+This short survey should take about 5 minutes. You can skip any optional question. Please do not
+share identity or residence documents, document numbers, or other sensitive personal information.
+We will look at answers together as aggregate patterns, not publish personal stories.
 
-## Draft introduction
+### Questions
 
-We are exploring how to make living and working in Poland easier for Filipinos.
+1. **Which best describes you now?**
+   - Living or working in Poland
+   - Previously lived or worked in Poland
+   - Considering moving to Poland
+   - Other
 
-Before building anything, we want to understand real experiences, problems, and needs.
+2. **In your own words, what has been difficult about living, working, or preparing to move to
+   Poland?** *(Optional free text)*
 
-This short survey should take only a few minutes.
+3. **Think about the last time you needed help while living, working, or preparing to move to
+   Poland. What happened?**
+   - Describe what happened: ______
+   - I have not had an experience like this yet
 
-The wording is provisional until partner review and pilot testing.
+   Do not include names, document numbers, or sensitive details. If the respondent has not had
+   such an experience, skip Questions 4-5 and continue with Question 6.
 
-## Draft branching
+4. **What did you do to solve it, and who or what helped you?**
+   *(Shown only after a concrete experience; optional free text.)*
 
-A future questionnaire may ask where the participant is now: Poland, Philippines, another country,
-or previously in Poland.
+5. **Was the problem resolved?** *(Shown only after a concrete experience.)*
+   - Yes, fully
+   - Partly
+   - No
+   - It is still in progress
+   - Prefer not to say
 
-For people in Poland, possible context includes how long they have lived there, where they live,
-what brought them to Poland, and how they found work and accommodation.
+6. **Where do you usually look for help or information?** *(Select all that apply.)*
+   - Friends or family
+   - Filipino community or social media groups
+   - Employer or recruitment agency
+   - Polish government or official websites/offices
+   - Search engines or other websites
+   - Lawyer, accountant, adviser, or another paid professional
+   - Nonprofit or community organization
+   - I am not sure where to look
+   - Other
 
-Possible problem areas currently hypothesized by the project include work, employer changes, work
-and residence documents, official letters, public offices, accommodation, banking, taxes,
-healthcare, transportation, Polish language, employment contracts, family matters, trustworthy
-information, and community.
+7. **Which areas have been difficult or confusing for you?** *(Select up to three. These are
+   possible areas, not assumed needs.)*
+   - Work or finding a job
+   - Changing jobs or employers
+   - Employment contracts
+   - Documents, PESEL, or Polish letters
+   - Residence or work-related procedures
+   - Polish offices and public administration
+   - Accommodation
+   - Banking
+   - Taxes
+   - Healthcare
+   - Transportation
+   - Polish language
+   - Family matters
+   - Finding trustworthy information
+   - Community or meeting people
+   - None of these
+   - Other: ______
 
-Do not present this list before giving respondents an opportunity to describe important problems
-in their own words. Always allow an `Other` or equivalent free-text route.
+8. **What do you wish had been easier, or what do you wish you had known earlier?**
+   *(Optional free text)*
 
-If a category list survives pilot testing, participants may be asked to identify a small number of
-their most important problems rather than checking everything.
+9. **Have you ever paid for help with one of these situations?**
+   - Yes
+   - No
+   - Prefer not to say
 
-## Existing solutions and behavior
+   If yes, optionally ask what kind of help they paid for and whether it was useful. Do not ask for
+   exact financial details during the pilot unless there is a clear reason.
 
-For important problems, ask about concrete past behavior: what happened the last time, what the
-participant did, who or what they used, whether the problem was resolved, and what was difficult.
+10. **Would you be willing to have a short follow-up conversation about your experience?**
+    - Yes
+    - Maybe
+    - No
 
-Ask whether they have ever paid for relevant help, what help they received, approximately how much
-they paid, and whether it was useful.
+    If yes or maybe, the survey tool may request an optional contact method with a clear explanation
+    of why it is needed. Store contact details outside Git and separately from shared analysis.
 
-Hypothetical willingness to pay is not proof of demand.
+### Closing
 
-## Pilot before broader use
+Thank you. Your answers will help us decide what deserves deeper investigation before anything is
+built. If you know another Filipino whose experience could help, you may share this survey with
+them.
 
-Test the questionnaire with a small number of people before broader distribution. Look for
-confusing wording, missing options, leading questions, trust concerns, unnecessary questions, and
-branching that does not match real situations.
+## Pilot plan
 
-Revise the survey from pilot evidence rather than treating the first draft as fixed.
+Share the draft with a few Filipinos first. Natural feedback from the Filipino project partner or
+anyone else is welcome, but no one person is a formal reviewer or validation gate.
 
-## Follow-up and privacy
+Observe or ask:
 
-Ask whether the participant would be willing to talk for about 15 minutes about their experience.
+- Does the introduction feel natural and trustworthy?
+- Is the reason for the survey clear?
+- Is it short and easy to complete on a phone?
+- Are any questions confusing, leading, intrusive, or unnecessary?
+- Are important answer options missing?
+- Does the order and any branching make sense?
+- Do the answers reveal real past behavior and unresolved problems?
+- Would the answers help decide what deserves deeper investigation?
+- Do people naturally feel comfortable sharing it further?
 
-Collect only contact information that is genuinely needed for follow-up, explain why it is being
-requested, and keep it outside this repository.
+Revise the survey from pilot evidence before broader sharing. Do not treat the pilot as completed
+until it has actually happened.
 
-After completion, participants may be invited to share the survey with another Filipino.
+## Analysis and privacy
 
-Never fabricate community percentages as if they were collected evidence. Publish only
-appropriately aggregated and anonymized information.
+Later analysis may report honest, anonymized aggregate observations about recurring categories,
+current ways of finding help, unresolved problems, and differences between respondent situations.
+Do not invent percentages or treat any response count as automatic proof of demand.
+
+Do not collect identity documents, residence documents, document numbers, unnecessary legal or
+personal details, raw private stories, or information without a clear discovery purpose. Keep all
+respondent-level and contact data outside the repository.
+
+Hypothetical willingness to use or pay is not proof. Follow-up conversations and eventual real
+usage are needed to understand what survey patterns mean.

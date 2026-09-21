@@ -1,4 +1,4 @@
-﻿[CmdletBinding()]
+[CmdletBinding()]
 param(
     [string]$ProjectName = "Pinoy Poland",
     [switch]$Force
@@ -8,7 +8,6 @@ $ErrorActionPreference = "Stop"
 
 $Root = (Get-Location).Path
 $Docs = Join-Path $Root "docs"
-$DecisionDate = Get-Date -Format "yyyy-MM-dd"
 
 function Write-ProjectFile {
     param(
@@ -30,7 +29,7 @@ function Write-ProjectFile {
     }
 
     $Utf8NoBom = New-Object System.Text.UTF8Encoding($false)
-    [System.IO.File]::WriteAllText($Path, $Content + [Environment]::NewLine, $Utf8NoBom)
+    [System.IO.File]::WriteAllText($Path, $Content + "`n", $Utf8NoBom)
     Write-Host "Created: $Path" -ForegroundColor Green
 }
 
@@ -39,11 +38,11 @@ $Agents = @'
 
 ## Purpose
 
-This repository explores a product that may make living and working in Poland easier for Filipinos.
+This repository explores a simple practical-help website that may make living and working in Poland
+easier for Filipinos.
 
-`Pinoy Poland` is a working name, not a final branding decision.
-
-The project is currently in product discovery.
+`Pinoy Poland` is a working name, not a final branding decision. The project remains in product
+discovery, and its first useful capability is not yet selected.
 
 Do not assume that the final product is an employment agency, job board, immigration service,
 housing platform, administrative assistance service, community platform, or any other specific
@@ -79,47 +78,53 @@ Do not build software merely because software can be built.
 Initial discovery may include Filipinos living or working in Poland, people who previously lived
 or worked in Poland, and Filipinos considering moving to Poland.
 
-A second discovery track may later include Polish employers and relevant service providers.
+A second discovery track may later include Polish employers and relevant service providers when
+evidence makes that useful.
 
 ## Problem areas to investigate
 
-Potential areas include employment, changing employers, residence and work-related procedures,
-understanding Polish documents, public administration, accommodation, banking, taxes, healthcare,
-transportation, language, employment contracts, family-related needs, community, trustworthy
-information, and preparing to move to Poland.
+Potential areas include work, finding and changing jobs, employment questions, documents, PESEL,
+residence and work-related procedures, Polish letters and public offices, accommodation, banking,
+taxes, healthcare, transportation, language, employment contracts, family-related needs,
+community, trustworthy information, everyday life, and preparing to move to Poland.
 
-These are research areas, not confirmed product requirements.
+These are research areas, not confirmed needs or product requirements.
 
 ## Current stage
 
-Prefer partner review, open conversations, survey piloting, interviews, observation,
-official-source research, documenting evidence, and testing willingness to use or pay.
+The immediate working artifact is a short, respondent-ready survey. Share it first with a few
+Filipinos, learn from the pilot, improve it, and only then distribute it more broadly. Use aggregate
+patterns and useful follow-up conversations to decide what deserves deeper investigation.
 
-Avoid premature application architecture, frameworks, databases, cloud infrastructure,
-authentication, marketplaces, recruitment systems, payment systems, and mobile applications.
+Natural Filipino feedback should challenge assumptions, but no partner or individual is a formal
+review gate or community representative. The survey is a learning mechanism, not proof of demand
+or validation by itself.
 
-Technology should follow a validated need.
+Prefer survey piloting, conversations, observation, official-source research, documenting evidence,
+and later tests of real use or payment. Avoid premature application architecture, frameworks,
+databases, cloud infrastructure, authentication, marketplaces, recruitment systems, payment
+systems, and mobile applications. Technology should follow a validated need.
 
 ## Source of truth
 
-- `AGENTS.md` — project guardrails
-- `docs/vision.md` — current vision
-- `docs/discovery.md` — hypotheses and discovery strategy
-- `docs/survey.md` — current survey research outline
-- `docs/knowledge-and-evidence.md` — verified knowledge and collected evidence
-- `docs/decisions.md` — durable decisions
-- `docs/roadmap.md` — current sequence of work
+- `AGENTS.md` __EM_DASH__ project guardrails
+- `docs/vision.md` __EM_DASH__ current vision
+- `docs/discovery.md` __EM_DASH__ hypotheses and discovery strategy
+- `docs/survey.md` __EM_DASH__ respondent-ready survey draft and pilot plan
+- `docs/knowledge-and-evidence.md` __EM_DASH__ decisions, hypotheses, and collected evidence
+- `docs/decisions.md` __EM_DASH__ durable decisions
+- `docs/roadmap.md` __EM_DASH__ current sequence of work
 
 ## Privacy and safety
 
-Do not commit personally identifying respondent data, private messages, identity documents,
-residence documents, employment documents, sensitive personal stories, or raw interview
+Do not commit personally identifying respondent data, contact details, private messages, identity
+documents, residence documents, employment documents, sensitive personal stories, or raw interview
 recordings.
 
 Store only appropriately anonymized or aggregated research evidence in the repository.
 
-Legal, immigration, employment, tax, and administrative information must be verified against
-appropriate authoritative sources before being presented as guidance.
+Legal, immigration, employment, tax, residence, and administrative information must be verified
+against appropriate authoritative sources before being presented as guidance.
 
 Do not promise visas, jobs, residence outcomes, or administrative outcomes.
 
@@ -128,42 +133,188 @@ Do not promise visas, jobs, residence outcomes, or administrative outcomes.
 Discover what is worth building before deciding what to build.
 '@
 
+$Readme = @'
+# __PROJECT_NAME__
+
+### A simple idea to make life in Poland easier for Filipinos
+
+```text
+              LIVING IN POLAND
+                     |
+        Sometimes you just need help.
+                     |
+     +---------------+---------------+
+     |               |               |
+    WORK          DOCUMENTS      DAILY LIFE
+     |               |               |
+ finding jobs     PESEL           housing
+ changing jobs    residence       banking
+ contracts        work permits    healthcare
+ employers        Polish letters  taxes
+     |               |               |
+     +---------------+---------------+
+                     |
+              WHERE DO I START?
+```
+
+## The idea
+
+Create a simple website for Filipinos in Poland where you can find practical help with real
+everyday problems.
+
+Not complicated information.
+
+Just:
+
+```text
+I HAVE A PROBLEM
+       |
+       v
+What should I do?
+       |
+       v
+Where should I go?
+       |
+       v
+What do I need?
+       |
+       v
+Simple explanation
+       |
+       v
+Trusted information / useful help
+```
+
+But instead of guessing what Filipinos need, we start by asking them.
+
+## How we start
+
+```text
+        SHORT SURVEY
+             |
+             v
+ Share it with a few Filipinos
+             |
+             v
+     They may share it further
+             |
+             v
+   We collect real answers
+             |
+             v
+       SEE THE RESULTS
+             |
+             v
+ What problems appear most often?
+             |
+             v
+        START WITH ONE
+             |
+             v
+     Build something useful
+             |
+             v
+      See if people use it
+             |
+             v
+     Learn -> improve -> repeat
+```
+
+So maybe the first thing people need is help with jobs.
+
+Maybe it's documents.
+
+Maybe housing.
+
+Maybe understanding Polish offices and procedures.
+
+Or maybe it's something we haven't thought about at all.
+
+The survey helps us find out. It is a starting point for learning, not proof by itself.
+
+And later the website could grow naturally:
+
+```text
+                  PINOY POLAND
+                       |
+          +------------+------------+
+          |            |            |
+        HELP          JOBS         LIFE
+          |            |            |
+      Documents      Offers       Housing
+      Procedures     Employers    Banking
+      Offices        Changing     Healthcare
+      Letters        jobs         Everyday help
+          |            |            |
+          +------------+------------+
+                       |
+                   COMMUNITY
+```
+
+These are possible future directions, not a promised feature list or product structure. What we
+learn may point somewhere different.
+
+Start small. Ask people. See the real problems. Build what is actually useful.
+
+Something made with Filipinos in Poland, not just for Filipinos in Poland.
+
+## About this repository
+
+__PROJECT_NAME__ is a working name. This repository holds the project's discovery notes and keeps the
+work evidence-first. No first product capability has been chosen yet.
+
+For contributors:
+
+- [Vision](docs/vision.md)
+- [Discovery approach](docs/discovery.md)
+- [Survey draft](docs/survey.md)
+- [Knowledge and evidence](docs/knowledge-and-evidence.md)
+- [Decisions](docs/decisions.md)
+- [Roadmap](docs/roadmap.md)
+- [Project instructions](AGENTS.md)
+'@
+
 $Vision = @'
 # Vision
 
-## Working idea
+## Human goal
 
-`Pinoy Poland` is a working name for an early-stage project exploring how to make living and
-working in Poland easier for Filipinos.
+Make living and working in Poland easier for Filipinos.
 
-The final product and business model are deliberately undecided.
+`Pinoy Poland` is a working name. The current working product concept is a simple website where
+Filipinos in Poland could find practical help with real everyday problems.
 
-The project starts with people and their real experiences rather than with software.
+It could help a person move from:
 
-## Human problem space
+```text
+I have a problem
+       |
+       v
+What should I do, where should I go, and what do I need?
+       |
+       v
+Simple explanation and trusted information or useful help
+```
 
-Potential questions include finding trustworthy work, understanding Polish documents, dealing
-with offices, changing employers, finding accommodation, opening a bank account, and knowing
-where to ask for reliable help.
+## Possible problem areas
 
-For people considering Poland, discovery may cover whether Poland is a realistic option, how work
-and preparation function, how to find trustworthy information, and what happens after arrival.
+Discovery may find important problems involving work, jobs, changing employers, documents, PESEL,
+residence and work procedures, Polish letters and offices, accommodation, banking, healthcare,
+taxes, transportation, language, everyday life, trustworthy information, community, or something
+not yet considered.
 
-These examples describe the problem space. They are not validated product requirements.
+These are examples and hypotheses, not validated needs or committed product areas.
 
-## Possible future value
+## Current product position
 
-A future service might help a person describe their situation, identify what they need, understand
-what to do next, find trusted sources, and know where to obtain further help.
+The practical-help website is a clear working concept, but its first useful capability remains
+undecided. A short survey, followed by useful conversations, will look for repeated concrete
+problems and how people handle them today.
 
-Exactly which parts should become a product must be discovered.
+Evidence should determine which one problem is worth testing first and whether the smallest useful
+solution is information, a service, a workflow, software, a partnership, or something else.
 
-## Possible directions
-
-Evidence may eventually point toward information, practical guidance, administrative help, jobs,
-housing, community, employer services, or something not yet discovered.
-
-Do not treat these possibilities as a product roadmap.
+The business model, technology, and broader product direction remain evidence-gated.
 '@
 
 $Discovery = @'
@@ -171,8 +322,8 @@ $Discovery = @'
 
 ## Objective
 
-Discover which problems are real, repeated, important, and insufficiently solved before deciding
-what product to build.
+Discover which problems are real, repeated, important, and insufficiently solved before choosing
+the first product capability.
 
 ## Discovery loop
 
@@ -180,189 +331,276 @@ what product to build.
 Idea
  |
  v
-Assumptions
+Simple explanation
  |
  v
-Filipino partner review
+Short survey
  |
  v
-Open conversations
+Small initial sharing / pilot
  |
  v
-Survey pilot
+Learn and improve
  |
  v
-Broader survey + follow-up interviews
+Broader sharing
  |
  v
-Evidence
+Responses + follow-up conversations
  |
  v
-Repeated problems + existing alternatives
+Patterns / repeated problems
  |
  v
-Problem worth solving?
+Problem worth testing?
  |
- +-- no --> learn and continue discovery
+ +-- no --> continue learning
  |
- +-- yes --> smallest experiment --> real usage --> willingness to pay
+ +-- yes
+        |
+        v
+Smallest useful solution
+        |
+        v
+Real usage
+        |
+        v
+Learn -> improve -> repeat
 ```
 
-## Initial questions
+The survey is the first practical discovery mechanism. It is not proof of demand, product
+validation by itself, a product requirement generator, or a substitute for conversations.
 
-Learn what problems Filipinos actually experience in Poland, which are most important, how they
-describe those problems in their own words, how they solve them today, which alternatives work or
-fail, whether people already pay for help, and which problems require information, human
-assistance, regulated professionals, employers, or partners.
+## What we want to learn
 
-## First evidence sources
+We want to learn what people have found difficult, what happened in a recent real situation, how
+they tried to solve it, which alternatives they used, whether it was resolved, and what they wish
+had been easier. Past behavior and repeated concrete experiences are stronger evidence than
+hypothetical enthusiasm.
 
-1. Review by the Filipino project partner to challenge framing, language, and obvious omissions.
-2. A small number of open conversations with Filipinos before fixing survey categories.
-3. A small survey pilot to test comprehension, trust, branching, and missing answer options.
-4. A broader structured survey plus follow-up interviews.
-5. Authoritative research where procedures or law matter.
-6. Later, conversations with employers or relevant businesses.
+The survey should allow people to describe problems in their own words before offering categories
+for analysis. Counts can reveal patterns worth investigating, but counts alone do not prove demand.
+Follow-up conversations can explain why a pattern exists and what happened in real situations.
 
-Partner review is valuable context, not community validation. Do not confuse quantity of survey
-responses with quality of evidence.
+## Evidence discipline
+
+- Assumptions are not evidence.
+- Survey responses are evidence, but not automatic product requirements.
+- One person's experience is useful context, not validation for a community.
+- Existing alternatives, actual behavior, unresolved outcomes, and real usage matter.
+- Hypothetical willingness to use or pay is not proof of demand.
+- Natural comments and corrections from the Filipino project partner or anyone else may inform
+  discovery, but no individual is a formal review gate or community representative.
+- Legal, residence, employment, tax, and administrative facts must be checked against appropriate
+  authoritative sources before they are presented as guidance.
 
 ## Initial discovery bounds
 
-A provisional first discovery round may aim for:
+A provisional first discovery round may aim for about 50 completed surveys and about 10 substantive
+Filipino conversations or follow-ups. A later employer track may include about 5 conversations if
+the emerging evidence makes that useful.
 
-- about 50 completed surveys
-- about 10 substantive Filipino conversations or follow-up interviews
-- about 5 employer or relevant-business conversations
-
-These numbers bound the initial learning effort; they are not validation thresholds, business
-success metrics, or proof of demand. Adjust them if partner review, open conversations, or the
-survey pilot shows that a different approach would produce better evidence.
-
-Behavior and past experience are stronger evidence than hypothetical enthusiasm.
+These figures only bound planning effort. They are not targets that prove success, validation
+thresholds, or evidence of demand, and they may change as the pilot teaches us more.
 '@
+
 $Survey = @'
 # Survey
 
 ## Status
 
-This document is a **research outline**, not yet a respondent-ready survey.
+This is the project's immediate working artifact: a respondent-ready draft for a small pilot. It
+has not been piloted or broadly shared yet. The pilot should improve it before wider distribution.
 
-The outline should first be challenged by the Filipino project partner and informed by a small
-number of open conversations. Only then should it become a concrete questionnaire with exact
-wording, answer options, branching, and a pilot.
+Use an existing survey tool if it is sufficient. Keep the form short, phone-friendly, friendly,
+and easy to share. Exact answer options and branching may be adjusted in the survey tool after the
+pilot, with meaningful learning recorded here.
 
 ## Purpose
 
-The eventual survey should help identify repeated problems, understand how people handle them
-today, and recruit participants for deeper conversations. It should be short enough to complete
-easily and should evolve based on what is learned.
+The survey should help us notice repeated problems, understand how people currently handle them,
+and find volunteers for useful follow-up conversations. It is a learning mechanism, not proof of
+demand or a generator of product requirements.
 
-The survey must not force respondents into categories created by the project team.
+## Respondent-ready draft
 
-## Before fixing the questionnaire
+### Introduction
 
-Ask open questions in partner review and early conversations, such as:
+**Help us understand what could make life in Poland easier for Filipinos.**
 
-- What has been unexpectedly difficult about living or working in Poland?
-- Tell us about the last time you needed help with something in Poland.
-- What did you do, and who or what helped you?
-- What still feels confusing, risky, expensive, slow, or difficult?
-- What do you wish you had known earlier?
+We are exploring a simple website with practical help for Filipinos in Poland. Before building
+anything, we want to learn about real experiences and problems.
 
-Use the language and recurring situations from these conversations to refine later answer options.
+This short survey should take about 5 minutes. You can skip any optional question. Please do not
+share identity or residence documents, document numbers, or other sensitive personal information.
+We will look at answers together as aggregate patterns, not publish personal stories.
 
-## Draft introduction
+### Questions
 
-We are exploring how to make living and working in Poland easier for Filipinos.
+1. **Which best describes you now?**
+   - Living or working in Poland
+   - Previously lived or worked in Poland
+   - Considering moving to Poland
+   - Other
 
-Before building anything, we want to understand real experiences, problems, and needs.
+2. **In your own words, what has been difficult about living, working, or preparing to move to
+   Poland?** *(Optional free text)*
 
-This short survey should take only a few minutes.
+3. **Think about the last time you needed help while living, working, or preparing to move to
+   Poland. What happened?**
+   - Describe what happened: ______
+   - I have not had an experience like this yet
 
-The wording is provisional until partner review and pilot testing.
+   Do not include names, document numbers, or sensitive details. If the respondent has not had
+   such an experience, skip Questions 4-5 and continue with Question 6.
 
-## Draft branching
+4. **What did you do to solve it, and who or what helped you?**
+   *(Shown only after a concrete experience; optional free text.)*
 
-A future questionnaire may ask where the participant is now: Poland, Philippines, another country,
-or previously in Poland.
+5. **Was the problem resolved?** *(Shown only after a concrete experience.)*
+   - Yes, fully
+   - Partly
+   - No
+   - It is still in progress
+   - Prefer not to say
 
-For people in Poland, possible context includes how long they have lived there, where they live,
-what brought them to Poland, and how they found work and accommodation.
+6. **Where do you usually look for help or information?** *(Select all that apply.)*
+   - Friends or family
+   - Filipino community or social media groups
+   - Employer or recruitment agency
+   - Polish government or official websites/offices
+   - Search engines or other websites
+   - Lawyer, accountant, adviser, or another paid professional
+   - Nonprofit or community organization
+   - I am not sure where to look
+   - Other
 
-Possible problem areas currently hypothesized by the project include work, employer changes, work
-and residence documents, official letters, public offices, accommodation, banking, taxes,
-healthcare, transportation, Polish language, employment contracts, family matters, trustworthy
-information, and community.
+7. **Which areas have been difficult or confusing for you?** *(Select up to three. These are
+   possible areas, not assumed needs.)*
+   - Work or finding a job
+   - Changing jobs or employers
+   - Employment contracts
+   - Documents, PESEL, or Polish letters
+   - Residence or work-related procedures
+   - Polish offices and public administration
+   - Accommodation
+   - Banking
+   - Taxes
+   - Healthcare
+   - Transportation
+   - Polish language
+   - Family matters
+   - Finding trustworthy information
+   - Community or meeting people
+   - None of these
+   - Other: ______
 
-Do not present this list before giving respondents an opportunity to describe important problems
-in their own words. Always allow an `Other` or equivalent free-text route.
+8. **What do you wish had been easier, or what do you wish you had known earlier?**
+   *(Optional free text)*
 
-If a category list survives pilot testing, participants may be asked to identify a small number of
-their most important problems rather than checking everything.
+9. **Have you ever paid for help with one of these situations?**
+   - Yes
+   - No
+   - Prefer not to say
 
-## Existing solutions and behavior
+   If yes, optionally ask what kind of help they paid for and whether it was useful. Do not ask for
+   exact financial details during the pilot unless there is a clear reason.
 
-For important problems, ask about concrete past behavior: what happened the last time, what the
-participant did, who or what they used, whether the problem was resolved, and what was difficult.
+10. **Would you be willing to have a short follow-up conversation about your experience?**
+    - Yes
+    - Maybe
+    - No
 
-Ask whether they have ever paid for relevant help, what help they received, approximately how much
-they paid, and whether it was useful.
+    If yes or maybe, the survey tool may request an optional contact method with a clear explanation
+    of why it is needed. Store contact details outside Git and separately from shared analysis.
 
-Hypothetical willingness to pay is not proof of demand.
+### Closing
 
-## Pilot before broader use
+Thank you. Your answers will help us decide what deserves deeper investigation before anything is
+built. If you know another Filipino whose experience could help, you may share this survey with
+them.
 
-Test the questionnaire with a small number of people before broader distribution. Look for
-confusing wording, missing options, leading questions, trust concerns, unnecessary questions, and
-branching that does not match real situations.
+## Pilot plan
 
-Revise the survey from pilot evidence rather than treating the first draft as fixed.
+Share the draft with a few Filipinos first. Natural feedback from the Filipino project partner or
+anyone else is welcome, but no one person is a formal reviewer or validation gate.
 
-## Follow-up and privacy
+Observe or ask:
 
-Ask whether the participant would be willing to talk for about 15 minutes about their experience.
+- Does the introduction feel natural and trustworthy?
+- Is the reason for the survey clear?
+- Is it short and easy to complete on a phone?
+- Are any questions confusing, leading, intrusive, or unnecessary?
+- Are important answer options missing?
+- Does the order and any branching make sense?
+- Do the answers reveal real past behavior and unresolved problems?
+- Would the answers help decide what deserves deeper investigation?
+- Do people naturally feel comfortable sharing it further?
 
-Collect only contact information that is genuinely needed for follow-up, explain why it is being
-requested, and keep it outside this repository.
+Revise the survey from pilot evidence before broader sharing. Do not treat the pilot as completed
+until it has actually happened.
 
-After completion, participants may be invited to share the survey with another Filipino.
+## Analysis and privacy
 
-Never fabricate community percentages as if they were collected evidence. Publish only
-appropriately aggregated and anonymized information.
+Later analysis may report honest, anonymized aggregate observations about recurring categories,
+current ways of finding help, unresolved problems, and differences between respondent situations.
+Do not invent percentages or treat any response count as automatic proof of demand.
+
+Do not collect identity documents, residence documents, document numbers, unnecessary legal or
+personal details, raw private stories, or information without a clear discovery purpose. Keep all
+respondent-level and contact data outside the repository.
+
+Hypothetical willingness to use or pay is not proof. Follow-up conversations and eventual real
+usage are needed to understand what survey patterns mean.
 '@
+
 $Evidence = @'
 # Knowledge and Evidence
 
 ## Purpose
 
-This document separates what the project knows from what it currently assumes.
+This document separates project decisions, hypotheses, and collected evidence. Decisions about
+how to learn are not market evidence.
 
-Do not promote assumptions into evidence without a supporting source or real observation.
+## What we have decided
 
-## Current evidence
+- `Pinoy Poland` remains a working name.
+- The current working concept is a practical-help website for Filipinos in Poland.
+- Discovery starts with a short, respondent-ready survey shared first with a few people.
+- The survey will be improved from the pilot before broader sharing.
+- Aggregate results and useful follow-up conversations will be used to investigate repeated
+  problems and how people currently solve them.
+- Evidence should determine the first problem to test.
+- A smallest-useful-solution experiment should come before any large platform.
 
-The project currently has an initial idea and personal observations that justify discovery.
+These are project and process decisions. They do not show that a market need exists.
 
-No broad community need has yet been validated.
-No product-market fit has been established.
-No willingness to pay has been established.
-No specific product direction has been selected.
+## What remains hypothetical
 
-## Current hypotheses
+Potential needs may involve work, finding or changing jobs, documents, residence and work
+procedures, Polish letters and public offices, accommodation, banking, taxes, healthcare,
+transportation, language, contracts, family matters, trustworthy information, community,
+everyday life, or problems discovery has not yet revealed.
 
-Hypotheses include practical information gaps, difficult administrative processes, employment
-and accommodation problems, reliance on informal community help, value in trustworthy information,
-possible demand for paid human assistance, and complementary employer problems.
+None of these areas is a confirmed need, priority, feature, or product requirement.
 
-None of these should be represented as validated market facts yet.
+## Evidence we do not yet have
+
+No survey has been run and no community statistics currently exist. The project does not yet have:
+
+- evidence of broad community need or validated demand;
+- a validated problem ranking or first feature;
+- product-market fit or usage evidence;
+- demonstrated willingness to pay;
+- a validated business model; or
+- evidence of employer demand.
 
 ## Evidence entries
 
-Add dated entries using:
+Add appropriately anonymized or aggregated evidence using:
 
 ```text
-## YYYY-MM-DD — Short description
+## YYYY-MM-DD __EM_DASH__ Short description
 
 Source:
 Observation:
@@ -374,38 +612,63 @@ What this does not prove:
 Next question:
 ```
 
-Keep personally identifying respondent information outside the repository.
+Keep personally identifying respondent information, contact details, private messages, sensitive
+stories, documents, and raw recordings outside this repository.
 '@
 
-$Decisions = @"
+$Decisions = @'
 # Decisions
 
-## $DecisionDate — Start with discovery rather than implementation
+## 2026-09-21 __EM_DASH__ Start with discovery rather than implementation
 
 Begin the project as a product-discovery repository. Do not select application architecture or
 implement a product yet.
 
 The problem space is broad and the most valuable problem has not been validated.
 
-## $DecisionDate — Treat Pinoy Poland as a working name
+## 2026-09-21 __EM_DASH__ Treat Pinoy Poland as a working name
 
 Use **Pinoy Poland** as the current repository and project name without treating it as the final
 brand.
 
-## $DecisionDate — Use English as the initial project language
+## 2026-09-21 __EM_DASH__ Use English as the initial project language
 
 Keep initial repository documentation in English so it is understandable to Filipino and Polish
 collaborators.
 
-## $DecisionDate — Prefer compact text diagrams
+## 2026-09-21 __EM_DASH__ Prefer compact text diagrams
 
 Use small text diagrams for simple flows, hierarchies, and relationships when they improve
 understanding.
 
-## $DecisionDate — Keep personal research data out of Git
+## 2026-09-21 __EM_DASH__ Keep personal research data out of Git
 
 Do not store personally identifying survey or interview data in this repository.
-"@
+
+## 2026-09-21 __EM_DASH__ Explain the working idea simply and accessibly
+
+Use a short, visual, human explanation as the preferred external introduction at this stage: a
+simple practical-help website could make everyday problems easier for Filipinos in Poland, and we
+will ask people before choosing its first capability.
+
+Possible work, document, daily-life, and community directions remain exploratory rather than a
+committed product structure.
+
+## 2026-09-21 __EM_DASH__ Start practical discovery with a short survey and small pilot
+
+The initial foundation placed formal Filipino partner review and open conversations before survey
+work. That sequence usefully emphasized Filipino perspectives, but treating one partner as a
+required reviewer created unnecessary formality and pressure.
+
+Natural reactions, corrections, experiences, and ideas from the Filipino project partner or
+anyone else remain valuable discovery input. No individual is a validation gate or represents the
+wider Filipino community.
+
+The first practical mechanism is now a short survey shared initially with a few Filipinos. Improve
+it from the pilot before broader sharing, then use aggregate patterns and useful follow-up
+conversations to decide what deserves deeper investigation. Survey responses are evidence, but the
+survey is not validation by itself and does not automatically create product requirements.
+'@
 
 $Roadmap = @'
 # Roadmap
@@ -413,175 +676,111 @@ $Roadmap = @'
 ## Current position
 
 ```text
-Idea
- |
- v
 Repository foundation
- |
- v
-Filipino partner review       <- NEXT
- |
- v
-Open conversations
- |
- v
-Survey draft + pilot
- |
- v
-Broader community discovery
- |
- v
-Evidence
- |
- v
-Problem worth solving
- |
- v
-Smallest experiment
- |
- v
+        |
+        v
+Survey draft                <- CURRENT / NEXT WORK
+        |
+        v
+Small pilot
+        |
+        v
+Learn + improve survey
+        |
+        v
+Broader sharing
+        |
+        v
+Responses + conversations
+        |
+        v
+Patterns / evidence
+        |
+        v
+Choose one problem
+        |
+        v
+Smallest useful solution
+        |
+        v
 Real usage
- |
- v
-Business validation
- |
- v
-Product direction
+        |
+        v
+Learn + iterate
 ```
 
-## Stage 1 — Repository foundation
+## Stage 1 __EM_DASH__ Repository foundation
+
+Status: **Complete**
+
+The project purpose, discovery guardrails, working vision, evidence model, durable decisions, and
+roadmap are established. They will continue to evolve as evidence appears.
+
+## Stage 2 __EM_DASH__ Respondent-ready survey
 
 Status: **Current**
 
-Establish project purpose, discovery guardrails, initial vision, hypotheses, research outline,
-evidence model, durable decisions, and roadmap.
+Review the short draft as a real form, choose an existing survey tool, and prepare it for a small
+pilot. Keep it natural, phone-friendly, privacy-conscious, and focused on real experiences rather
+than hypothetical product enthusiasm.
 
-## Stage 2 — Filipino partner review
+## Stage 3 __EM_DASH__ Small pilot
 
 Status: **Next**
 
-Review the project from the Filipino partner perspective. Check whether the problem space resembles
-real experience, which assumptions look wrong, what is missing, how people may naturally describe
-their situations, and whether the proposed research approach would feel understandable and
-trustworthy.
+Share the survey with a few Filipinos. Learn whether it is clear, trustworthy, short enough,
+non-leading, and capable of producing answers useful for the next discovery decision.
 
-Record useful observations as input to discovery, while keeping clear that one partner perspective
-is not community validation.
-
-## Stage 3 — Open conversations
+## Stage 4 __EM_DASH__ Learn and improve
 
 Status: **Planned**
 
-Have a small number of open conversations with Filipinos before fixing questionnaire categories.
-Use concrete past experiences and participants' own language to challenge the current hypotheses
-and improve the research outline.
+Review initial responses and feedback, then improve wording, categories, options, and branching.
+Do not treat the pilot as validation or a completed discovery round.
 
-## Stage 4 — Survey draft and pilot
-
-Status: **Planned**
-
-Turn the research outline into a respondent-ready questionnaire only after the earlier qualitative
-learning. Pilot it with a small number of people and refine wording, answer options, branching,
-privacy expectations, and missing areas.
-
-Use an existing survey tool if it is sufficient; custom software is not required for discovery.
-
-## Stage 5 — First community discovery
+## Stage 5 __EM_DASH__ Broader sharing
 
 Status: **Planned**
 
-Run a bounded first discovery round. A provisional target is about 50 survey responses and about
-10 substantive Filipino conversations or follow-up interviews, but adjust the bounds if earlier
-learning indicates a better approach.
+Share the improved survey more broadly. People may share it further. Keep respondent data outside
+Git and record only appropriately anonymized or aggregated evidence here.
 
-## Stage 6 — Employer discovery
+## Stage 6 __EM_DASH__ Patterns and conversations
 
 Status: **Planned**
 
-Talk to a small number of employers or relevant businesses. A provisional target is about 5
-conversations, subject to change as discovery develops.
+Analyze aggregate patterns, including repeated problems, existing alternatives, and unresolved
+outcomes. Use follow-up conversations where they can explain what happened and why. Planning
+bounds may guide effort, but no response count is a validation threshold.
 
-## Stage 7 — Select a problem
+## Stage 7 __EM_DASH__ Select one problem
 
 Status: **Blocked by evidence**
 
-Choose a first problem only when discovery provides sufficient evidence.
+Choose a first problem only when the evidence justifies testing it. Employer or service-provider
+discovery may be added if emerging evidence makes it relevant.
 
-## Stage 8 — Smallest useful solution
+## Stage 8 __EM_DASH__ Smallest useful solution
 
-Status: **Blocked**
+Status: **Blocked by evidence**
 
-Only after selecting a problem should the project choose technology and implementation.
-
-The first solution may be software, a manual service, content, a workflow, a partnership, or
-something else.
+Test the smallest useful response to the selected problem, then observe real usage and iterate.
+The response may be content, a manual service, a workflow, a partnership, software, or something
+else. Technology and business decisions come after the problem is understood.
 
 ## Guiding rule
 
 Do not ask: "What application should we build?"
 
-Ask: "What have we learned, and what is the smallest experiment that should happen next?"
+Ask: "What have we learned, and what is the smallest useful experiment that should happen next?"
 '@
-$Readme = @'
-# __PROJECT_NAME__
 
-An early-stage project exploring how to make living and working in Poland easier for Filipinos.
+$TemplateVariables = @('Agents', 'Readme', 'Vision', 'Discovery', 'Survey', 'Evidence', 'Decisions', 'Roadmap')
+foreach ($VariableName in $TemplateVariables) {
+    $Value = Get-Variable -Name $VariableName -ValueOnly
+    Set-Variable -Name $VariableName -Value $Value.Replace('__EM_DASH__', [string][char]0x2014)
+}
 
-**__PROJECT_NAME__ is a working name.**
-
-The project is currently in **discovery**. We are deliberately starting with people, problems,
-and evidence before deciding what product or business to build.
-
-## Current approach
-
-```text
-Listen
- |
- v
-Partner review + open conversations
- |
- v
-Survey pilot
- |
- v
-Broader discovery
- |
- v
-Evidence
- |
- v
-Choose one real problem
- |
- v
-Test the smallest useful solution
-```
-
-We are not yet building an employment agency, housing marketplace, immigration service, or large
-application. Evidence should determine what comes next.
-
-## Repository structure
-
-```text
-pinoy-poland/
-|-- AGENTS.md
-|-- README.md
-|-- bootstrap-pinoy-poland.ps1
-`-- docs/
-    |-- vision.md
-    |-- discovery.md
-    |-- survey.md
-    |-- knowledge-and-evidence.md
-    |-- decisions.md
-    `-- roadmap.md
-```
-
-## Current status
-
-Repository foundation and the first discovery model are being established.
-
-The next meaningful step is reviewing the idea and research outline from the Filipino partner
-perspective, followed by a few open conversations before finalizing a survey.
-'@
 $Readme = $Readme.Replace('__PROJECT_NAME__', $ProjectName)
 
 $Files = @{
@@ -607,7 +806,7 @@ Write-Host "Project: $ProjectName"
 Write-Host ""
 Write-Host "Review the generated files before committing." -ForegroundColor Cyan
 
-if (Get-Command git -ErrorAction SilentlyContinue) {
+if ((Get-Command git -ErrorAction SilentlyContinue) -and (Test-Path -LiteralPath (Join-Path $Root ".git"))) {
     Write-Host ""
     git status --short
 }

@@ -1,35 +1,40 @@
 # Vision
 
-## Working idea
+## Human goal
 
-`Pinoy Poland` is a working name for an early-stage project exploring how to make living and
-working in Poland easier for Filipinos.
+Make living and working in Poland easier for Filipinos.
 
-The final product and business model are deliberately undecided.
+`Pinoy Poland` is a working name. The current working product concept is a simple website where
+Filipinos in Poland could find practical help with real everyday problems.
 
-The project starts with people and their real experiences rather than with software.
+It could help a person move from:
 
-## Human problem space
+```text
+I have a problem
+       |
+       v
+What should I do, where should I go, and what do I need?
+       |
+       v
+Simple explanation and trusted information or useful help
+```
 
-Potential questions include finding trustworthy work, understanding Polish documents, dealing
-with offices, changing employers, finding accommodation, opening a bank account, and knowing
-where to ask for reliable help.
+## Possible problem areas
 
-For people considering Poland, discovery may cover whether Poland is a realistic option, how work
-and preparation function, how to find trustworthy information, and what happens after arrival.
+Discovery may find important problems involving work, jobs, changing employers, documents, PESEL,
+residence and work procedures, Polish letters and offices, accommodation, banking, healthcare,
+taxes, transportation, language, everyday life, trustworthy information, community, or something
+not yet considered.
 
-These examples describe the problem space. They are not validated product requirements.
+These are examples and hypotheses, not validated needs or committed product areas.
 
-## Possible future value
+## Current product position
 
-A future service might help a person describe their situation, identify what they need, understand
-what to do next, find trusted sources, and know where to obtain further help.
+The practical-help website is a clear working concept, but its first useful capability remains
+undecided. A short survey, followed by useful conversations, will look for repeated concrete
+problems and how people handle them today.
 
-Exactly which parts should become a product must be discovered.
+Evidence should determine which one problem is worth testing first and whether the smallest useful
+solution is information, a service, a workflow, software, a partnership, or something else.
 
-## Possible directions
-
-Evidence may eventually point toward information, practical guidance, administrative help, jobs,
-housing, community, employer services, or something not yet discovered.
-
-Do not treat these possibilities as a product roadmap.
+The business model, technology, and broader product direction remain evidence-gated.

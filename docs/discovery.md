@@ -2,8 +2,8 @@
 
 ## Objective
 
-Discover which problems are real, repeated, important, and insufficiently solved before deciding
-what product to build.
+Discover which problems are real, repeated, important, and insufficiently solved before choosing
+the first product capability.
 
 ## Discovery loop
 
@@ -11,63 +11,74 @@ what product to build.
 Idea
  |
  v
-Assumptions
+Simple explanation
  |
  v
-Filipino partner review
+Short survey
  |
  v
-Open conversations
+Small initial sharing / pilot
  |
  v
-Survey pilot
+Learn and improve
  |
  v
-Broader survey + follow-up interviews
+Broader sharing
  |
  v
-Evidence
+Responses + follow-up conversations
  |
  v
-Repeated problems + existing alternatives
+Patterns / repeated problems
  |
  v
-Problem worth solving?
+Problem worth testing?
  |
- +-- no --> learn and continue discovery
+ +-- no --> continue learning
  |
- +-- yes --> smallest experiment --> real usage --> willingness to pay
+ +-- yes
+        |
+        v
+Smallest useful solution
+        |
+        v
+Real usage
+        |
+        v
+Learn -> improve -> repeat
 ```
 
-## Initial questions
+The survey is the first practical discovery mechanism. It is not proof of demand, product
+validation by itself, a product requirement generator, or a substitute for conversations.
 
-Learn what problems Filipinos actually experience in Poland, which are most important, how they
-describe those problems in their own words, how they solve them today, which alternatives work or
-fail, whether people already pay for help, and which problems require information, human
-assistance, regulated professionals, employers, or partners.
+## What we want to learn
 
-## First evidence sources
+We want to learn what people have found difficult, what happened in a recent real situation, how
+they tried to solve it, which alternatives they used, whether it was resolved, and what they wish
+had been easier. Past behavior and repeated concrete experiences are stronger evidence than
+hypothetical enthusiasm.
 
-1. Review by the Filipino project partner to challenge framing, language, and obvious omissions.
-2. A small number of open conversations with Filipinos before fixing survey categories.
-3. A small survey pilot to test comprehension, trust, branching, and missing answer options.
-4. A broader structured survey plus follow-up interviews.
-5. Authoritative research where procedures or law matter.
-6. Later, conversations with employers or relevant businesses.
+The survey should allow people to describe problems in their own words before offering categories
+for analysis. Counts can reveal patterns worth investigating, but counts alone do not prove demand.
+Follow-up conversations can explain why a pattern exists and what happened in real situations.
 
-Partner review is valuable context, not community validation. Do not confuse quantity of survey
-responses with quality of evidence.
+## Evidence discipline
+
+- Assumptions are not evidence.
+- Survey responses are evidence, but not automatic product requirements.
+- One person's experience is useful context, not validation for a community.
+- Existing alternatives, actual behavior, unresolved outcomes, and real usage matter.
+- Hypothetical willingness to use or pay is not proof of demand.
+- Natural comments and corrections from the Filipino project partner or anyone else may inform
+  discovery, but no individual is a formal review gate or community representative.
+- Legal, residence, employment, tax, and administrative facts must be checked against appropriate
+  authoritative sources before they are presented as guidance.
 
 ## Initial discovery bounds
 
-A provisional first discovery round may aim for:
+A provisional first discovery round may aim for about 50 completed surveys and about 10 substantive
+Filipino conversations or follow-ups. A later employer track may include about 5 conversations if
+the emerging evidence makes that useful.
 
-- about 50 completed surveys
-- about 10 substantive Filipino conversations or follow-up interviews
-- about 5 employer or relevant-business conversations
-
-These numbers bound the initial learning effort; they are not validation thresholds, business
-success metrics, or proof of demand. Adjust them if partner review, open conversations, or the
-survey pilot shows that a different approach would produce better evidence.
-
-Behavior and past experience are stronger evidence than hypothetical enthusiasm.
+These figures only bound planning effort. They are not targets that prove success, validation
+thresholds, or evidence of demand, and they may change as the pilot teaches us more.
