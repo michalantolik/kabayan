@@ -115,8 +115,9 @@ And later the website could grow naturally:
                    COMMUNITY
 ```
 
-These are possible future directions, not a promised feature list or product structure. What we
-learn may point somewhere different.
+These are possible future directions, not a promised feature list or product structure.
+
+What we learn may point somewhere different.
 
 Start small. Ask people. See the real problems. Build what is actually useful.
 
