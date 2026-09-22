@@ -160,3 +160,15 @@ Use a senior-engineering simplicity rule: solve today's real problem, keep tomor
 Do not add multi-market frameworks, country strategies, provider abstractions, multi-tenancy, speculative layers, or pattern-heavy architecture merely to appear extensible. Prefer explicit, readable, reversible code. Avoid unnecessarily scattering Poland-specific or brand-specific values when a simple obvious boundary is cheaper, but do not build a configuration system for one value.
 
 Before a meaningful implementation choice, check: is this the simplest good solution for Poland; does it unnecessarily block a future second market; and are we adding an abstraction with no concrete present use? Generalize when a real second market or another current requirement supplies the second case.
+
+## 2026-09-22 — Keep Discovery Landing V1 owned by Web
+
+Implement the Discovery Landing as an anonymous, feature-oriented `Kabayan.Web` experience. Keep
+its bounded multilingual content, presentation, and interaction in Web; do not add Application,
+API, Infrastructure, persistence, authentication, or a generalized localization platform without
+a concrete product requirement.
+
+The committed static prototype is the migration and comparison baseline for this iteration.
+Prefer explicit feature ownership, meaningful component boundaries, and tests for user-visible
+routing or behavior that can plausibly regress. Introduce shared abstractions only when a present
+boundary or real consumers justify them.

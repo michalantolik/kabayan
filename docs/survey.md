@@ -3,8 +3,8 @@
 ## Status
 
 This is a respondent-ready draft for a small pilot. It has not been piloted or broadly shared yet.
-It will be reached through the planned Discovery Landing V1. After the prototype is implemented
-and responsively checked, Pilot 0 will review the page and survey journey before the small Filipino
+It will be reached through the implemented Discovery Landing V1. After the Web implementation is
+responsively checked, Pilot 0 will review the page and survey journey before the small Filipino
 pilot. Both reviews may improve the survey before wider distribution.
 
 Use an existing survey tool if it is sufficient. Keep the form short, phone-friendly, friendly,

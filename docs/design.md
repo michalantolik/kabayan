@@ -2,8 +2,10 @@
 
 ## Role of Discovery Landing V1
 
-Discovery Landing V1 is a small, real, responsive prototype used to support discovery before
-broader survey sharing. It should explain the project simply, establish enough trust to invite
+Discovery Landing V1 is a small, real, responsive experience implemented in `Kabayan.Web` and used
+to support discovery before broader survey sharing. The committed static prototype remains its
+current visual, content, interaction, and responsive reference. It should explain the project
+simply, establish enough trust to invite
 participation, connect to the short survey, show how discovery works, and present the chosen **Kabayan Poland** name without pretending that the product itself is validated.
 
 It is not the first validated product capability. Public UI must reflect the project's actual

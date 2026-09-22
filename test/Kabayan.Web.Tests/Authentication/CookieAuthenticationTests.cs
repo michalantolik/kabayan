@@ -10,21 +10,6 @@ public sealed class CookieAuthenticationTests(
     : IClassFixture<LaunchpadWebFactory>
 {
     [Fact]
-    public async Task Home_Unauthenticated_RedirectsToLogin()
-    {
-        using var client = CreateClient();
-
-        var response = await client.GetAsync("/");
-
-        Assert.Equal(
-            HttpStatusCode.Redirect,
-            response.StatusCode);
-
-        AssertLoginRedirect(
-            response.Headers.Location);
-    }
-
-    [Fact]
     public async Task CurrentUser_Unauthenticated_RedirectsToLogin()
     {
         using var client = CreateClient();

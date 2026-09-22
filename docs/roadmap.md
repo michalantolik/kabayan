@@ -27,6 +27,9 @@ Bounded responsive + copy refinement <- COMPLETE
 Kabayan naming + prototype alignment <- COMPLETE
     |
     v
+Web landing migration                <- COMPLETE
+    |
+    v
 Pilot 0: trusted first review       <- CURRENT / NEXT
     |
     v
@@ -85,6 +88,16 @@ Status: **Complete — committed prototype present in supplied repository snapsh
 Status: **Complete**
 
 - **Package — Complete: Replace candidate-name exploration with Kabayan Poland.** Candidate-name voting/preview UI has been removed; public copy and repository documentation use the chosen name while preserving rationale and unresolved risks.
+
+### Step: Move the discovery experience into the Web foundation
+
+Status: **Complete**
+
+- **Package — Complete: Migrate Discovery Landing V1 into `Kabayan.Web`.** The Web root now
+  reproduces the static prototype's content, language switching, in-page actions, and responsive
+  presentation. The static prototype remains the explicit comparison baseline, and the existing
+  GitHub Pages workflow continues to publish it. No survey collection, backend behavior, or
+  product capability was added.
 
 ### Step: Secure the intended public identity
 

@@ -10,7 +10,12 @@ No first problem or product capability has been validated. Work, documents, hous
 
 ## Current direction
 
-The project starts by listening rather than guessing. The survey foundation exists, and a responsive **Discovery Landing V1** is implemented as a dependency-free static prototype. It explains the project, invites participation in the survey, and makes the discovery process visible. It is a discovery tool, not the first validated product capability.
+The project starts by listening rather than guessing. The survey foundation exists, and the
+responsive **Discovery Landing V1** is implemented in `Kabayan.Web`. The original dependency-free
+static prototype remains in the repository as the visual, content, interaction, and responsive
+comparison baseline. The landing explains the project, invites participation in the survey, and
+makes the discovery process visible. It is a discovery tool, not the first validated product
+capability.
 
 ```text
 LISTEN -> LEARN -> CHOOSE -> BUILD -> LEARN AGAIN -> repeat
@@ -34,10 +39,11 @@ Launchpad Application Foundation is installed and validated. The repository cont
 corresponding test projects. This is technical foundation work, not product or discovery
 validation.
 
-`Kabayan.Web` remains the generic Foundation shell and is not the current public product
-experience. The existing static Discovery Landing remains the visual and product reference. The
-GitHub Pages workflow still publishes only that static landing, not `Kabayan.Web`. Localization
-1.0 is not installed.
+`Kabayan.Web` now presents the Discovery Landing as its anonymous entry experience while preserving
+the installed Foundation capabilities. The existing static Discovery Landing remains the migration
+and comparison reference. The GitHub Pages workflow still publishes only that static landing, not
+`Kabayan.Web`. Localization 1.0 is not installed; the landing uses a small page-owned language
+mechanism for English, draft Filipino, and Polish.
 
 Foundation capabilities such as authentication, accounts, persistence, and application structure
 must not be treated as validated Kabayan requirements. Preserve the installed Foundation, but do
@@ -50,11 +56,21 @@ Poland is the only current market. A repeatable solution may later be explored i
 
 Implementation should therefore solve Poland simply while avoiding unnecessary Poland-only coupling. Do not build multi-market abstractions before a real second market creates a concrete need.
 
-## Run the local prototype
+## Run the Web application
+
+```powershell
+dotnet run --project src/Kabayan.Web/Kabayan.Web.csproj
+```
+
+Open the HTTP or HTTPS URL shown in the output. The root route is the Discovery Landing.
+
+## Run the static comparison prototype
 
 Open `index.html` directly in a browser. If a local server is preferred, run `python -m http.server 8000` from the repository root and open `http://localhost:8000`.
 
-The prototype has no build step, external dependencies, analytics, backend, or persistent storage. Its survey action explains the planned participation journey but does not submit a survey.
+The static prototype has no build step, external dependencies, analytics, backend, or persistent
+storage. Neither implementation submits a survey; the survey action honestly explains the planned
+participation journey.
 
 ## Public review deployment
 

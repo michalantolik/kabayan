@@ -1,0 +1,179 @@
+@page "/"
+@layout DiscoveryLayout
+
+<PageTitle>Kabayan Poland — Starting by listening</PageTitle>
+<HeadContent>
+    <meta name="description" content="Kabayan Poland is starting by listening to Filipinos' real experiences of life in Poland." />
+    <link rel="stylesheet" href="@Assets["discovery-landing.css"]" />
+</HeadContent>
+
+<a class="skip-link" href="#main" data-i18n="skipLink">Skip to main content</a>
+
+<header class="site-header">
+  <div class="shell header-inner">
+    <a class="brand" href="#top" aria-label="Kabayan Poland home" data-i18n-aria-label="brandLabel">
+      <span class="brand-mark" aria-hidden="true"><span></span><span></span></span>
+      <span>
+        <strong>Kabayan Poland</strong>
+        <small data-i18n="marketLabel">Poland · discovery</small>
+      </span>
+    </a>
+
+    <nav class="language-switcher" aria-label="Choose language" data-i18n-aria-label="languageLabel">
+      <button type="button" data-language="fil" lang="fil" aria-pressed="false">FIL</button>
+      <button type="button" data-language="en" lang="en" aria-pressed="true">EN</button>
+      <button type="button" data-language="pl" lang="pl" aria-pressed="false">PL</button>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <div class="shell hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow" data-i18n="hero.eyebrow">For Filipinos connected with Poland</p>
+        <h1 id="hero-title" data-i18n="hero.title">Let’s make life in Poland easier—starting by listening.</h1>
+        <p class="hero-lead" data-i18n="hero.lead">Before choosing what to build, we want to understand real experiences: what has been difficult, what already works, and what could genuinely help.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#share" data-i18n="hero.cta">How to share your experience</a>
+          <span class="time-note">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg>
+            <span data-i18n="hero.time">About 5 minutes</span>
+          </span>
+        </div>
+      </div>
+
+      <aside class="hero-note" aria-label="Current project stage" data-i18n-aria-label="hero.noteLabel">
+        <span class="stage-pulse" aria-hidden="true"></span>
+        <p class="stage-label" data-i18n="hero.noteKicker">Where we are now</p>
+        <p class="stage-title" data-i18n="hero.noteTitle">Listening</p>
+        <p data-i18n="hero.noteBody">No solution has been chosen. Your experience can help us learn what deserves attention.</p>
+      </aside>
+    </div>
+    <div class="hero-rule" aria-hidden="true"></div>
+  </section>
+
+  <section class="section why" aria-labelledby="why-title">
+    <div class="shell split-layout">
+      <div>
+        <p class="eyebrow" data-i18n="why.eyebrow">Why we’re here</p>
+        <h2 id="why-title" data-i18n="why.title">We don’t want to guess what people need.</h2>
+      </div>
+      <div class="body-copy">
+        <p data-i18n="why.body1">Life in a new country can contain questions that are hard to notice when you already know how things work. But we do not yet know which problems matter most—or whether our ideas are the right ones.</p>
+        <p data-i18n="why.body2">So we are beginning with real experiences. We want to learn what happened, where people looked for help, what worked, and what they wish had been easier.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section origin" aria-labelledby="origin-title">
+    <div class="shell origin-card">
+      <div class="origin-copy">
+        <p class="eyebrow" data-i18n="origin.eyebrow">It started close to home</p>
+        <h2 id="origin-title">Gladys &amp; Michał</h2>
+        <p data-i18n="origin.body1">We are a Filipino-Polish couple living together in Poland. Everyday life made us notice that something which seems simple when you already know Poland may be much less obvious when you do not.</p>
+        <p data-i18n="origin.body2">Our experience raised questions, but it is only one experience. That is why we want to listen to other Filipinos instead of assuming that what happened to us is true for everyone.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section share" id="share" aria-labelledby="share-title">
+    <div class="shell share-grid">
+      <div class="share-intro">
+        <p class="eyebrow eyebrow-light" data-i18n="share.eyebrow">Share your experience</p>
+        <h2 id="share-title" data-i18n="share.title">A short survey can help us notice what repeats.</h2>
+        <p data-i18n="share.body">We will look for patterns in real situations before deciding what is worth investigating further.</p>
+        <a class="text-link text-link-light" href="#process" data-i18n="share.cta">See how we will use what we learn</a>
+      </div>
+
+      <div class="survey-card" aria-label="Survey details" data-i18n-aria-label="share.cardLabel">
+        <div class="survey-time">
+          <strong>5</strong>
+          <span data-i18n="share.minutes">minutes, approximately</span>
+        </div>
+        <ul class="check-list">
+          <li data-i18n="share.point1">Skip optional questions if you prefer.</li>
+          <li data-i18n="share.point2">Do not share documents, document numbers, or sensitive details.</li>
+        </ul>
+        <div class="survey-status">
+          <strong data-i18n="share.statusTitle">Survey status: not open yet</strong>
+          <span data-i18n="share.statusBody">We are reviewing this page before inviting responses.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section process" id="process" aria-labelledby="process-title">
+    <div class="shell process-grid">
+      <div class="process-intro">
+        <p class="eyebrow" data-i18n="process.eyebrow">How we start</p>
+        <h2 id="process-title" data-i18n="process.title">Listen first. Build only after we learn.</h2>
+        <p data-i18n="process.body">This is the process we intend to follow. If something does not help, we learn again rather than pretend we got it right.</p>
+      </div>
+
+      <ol class="process-list">
+        <li class="is-current">
+          <span class="process-marker" aria-hidden="true">1</span>
+          <div>
+            <span class="current-tag" data-i18n="process.current">We are here</span>
+            <h3 data-i18n="process.listen.title">Listening</h3>
+            <p data-i18n="process.listen.body">We ask Filipinos about their real experiences in Poland.</p>
+          </div>
+        </li>
+        <li>
+          <span class="process-marker" aria-hidden="true">2</span>
+          <div>
+            <h3 data-i18n="process.learn.title">Learning</h3>
+            <p data-i18n="process.learn.body">We look for problems that happen repeatedly.</p>
+          </div>
+        </li>
+        <li>
+          <span class="process-marker" aria-hidden="true">3</span>
+          <div>
+            <h3 data-i18n="process.choose.title">Choosing</h3>
+            <p data-i18n="process.choose.body">We choose one problem we can realistically help with.</p>
+          </div>
+        </li>
+        <li>
+          <span class="process-marker" aria-hidden="true">4</span>
+          <div>
+            <h3 data-i18n="process.build.title">Building</h3>
+            <p data-i18n="process.build.body">We build the smallest useful response.</p>
+          </div>
+        </li>
+        <li class="loops-back">
+          <span class="process-marker" aria-hidden="true">5</span>
+          <div>
+            <h3 data-i18n="process.again.title">Learning again</h3>
+            <p data-i18n="process.again.body">We check whether it helps, then decide what to do next.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+
+  <section class="section final-cta" aria-labelledby="final-title">
+    <div class="shell final-card">
+      <div>
+        <p class="eyebrow eyebrow-light" data-i18n="final.eyebrow">One experience can raise a useful question</p>
+        <h2 id="final-title" data-i18n="final.title">Help us learn what deserves attention.</h2>
+      </div>
+      <div>
+        <p data-i18n="final.body">When the survey is ready for the pilot, your experience can help us decide what to investigate—before we choose what to build.</p>
+        <a class="button button-gold" href="#share" data-i18n="final.cta">How to share your experience</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="shell footer-inner">
+    <div>
+      <strong>Kabayan Poland</strong>
+      <p data-i18n="footer.working">Starting in Poland by listening before building.</p>
+    </div>
+    <p data-i18n="footer.privacy">Local review prototype · No analytics · No answers collected</p>
+  </div>
+</footer>
+

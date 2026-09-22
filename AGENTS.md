@@ -58,15 +58,18 @@ These are research areas, not confirmed needs or product requirements.
 The product/discovery roadmap remains at **Stage 2 — Discovery preparation**. The survey foundation
 is respondent-ready but has not been piloted. A responsive local Discovery Landing V1 prototype
 has completed Michał's visual and product review and the resulting bounded responsive and copy
-refinement. The static prototype is committed and remains the current visual and product
-reference. A GitHub Pages workflow exists and still publishes the static landing, not
-`Kabayan.Web`. Do not infer from the workflow alone that a public deployment has run or that the
-custom domain is configured. The prototype collects no responses.
+refinement. `Kabayan.Web` now owns an implementation migrated from that prototype, while the
+committed static files remain the comparison baseline for this iteration. A GitHub Pages workflow
+exists and still publishes the static landing, not `Kabayan.Web`. Do not infer from the workflow
+alone that a public deployment has run or that the custom domain is configured. Neither landing
+collects responses.
 
 Launchpad Application Foundation is installed and validated. The repository contains
 `Kabayan.Web`, `Kabayan.Api`, `Kabayan.Application`, and `Kabayan.Infrastructure` with corresponding
-test projects. `Kabayan.Web` remains the generic Foundation shell and is not the current public
-product experience. Localization 1.0 is not installed. Foundation installation is technical
+test projects. `Kabayan.Web` preserves the generic Foundation capabilities and now uses the
+Discovery Landing as its anonymous entry experience. Localization 1.0 is not installed; the
+landing keeps its bounded English, draft Filipino, and Polish content within the Web feature.
+Foundation installation is technical
 progress, not evidence that a product problem, capability, business model, or application
 direction has been validated.
 
