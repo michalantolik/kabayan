@@ -111,10 +111,15 @@ exploratory until implementation and review.
 
 ## Design history
 
-An earlier high-fidelity **Future Vision Concept** explored a richer possible website and helped
-identify the desired visual character. It may contain hypothetical future product areas. It is not
-a promise, specification, roadmap, or feature backlog. No concept asset is assumed to exist in the
-repository.
+An earlier high-fidelity [**Future Vision Concept**](design/concepts/2026-09-21-future-vision-concept.png)
+is a historical UI/UX concept generated with AI assistance from Michał's idea. It explored a richer
+possible website and helped identify the desired visual character. Its `Gabay` name and name-choice
+interaction are historical; they were superseded by the Kabayan / Kabayan Poland naming decision.
+
+The people, imagery, and quoted statements shown in the concept are AI-generated design elements,
+not real users, respondents, or testimonials. The concept may show hypothetical areas such as Work,
+Documents, Housing, Healthcare, Language, or Community; none is an approved feature or commitment.
+It is not a promise, specification, roadmap, current public UI, or feature backlog.
 
 **Discovery Landing V1** instead represents current reality: it explains discovery, asks for
 participation, and does not advertise unbuilt capabilities. Future design discussions should keep
